@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="572e0068-5e52-4611-b3a3-678b3c9fc258">
+  <name>ПодсчитатьЛиквиды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсчитать ликвиды</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

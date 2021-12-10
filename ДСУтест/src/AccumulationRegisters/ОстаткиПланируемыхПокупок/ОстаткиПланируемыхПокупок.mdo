@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00f5c8ce-b0e8-47a5-8b47-0a8f1f39fabc">
+  <producedTypes>
+    <selectionType typeId="9e04ee7b-14d2-4bd5-8be0-f8a4a372424d" valueTypeId="7ad8fa70-89d6-4b5f-b382-31e78b62e7c6"/>
+    <listType typeId="76a87891-d035-4a19-badb-f42e33371e06" valueTypeId="fd0a8ed9-543a-4022-b3e7-f30283c8dccb"/>
+    <managerType typeId="45d1a9c5-78f1-4cac-8664-c3d043056d74" valueTypeId="715f2652-d3bf-4a6a-b149-2b5187ac137b"/>
+    <recordSetType typeId="cdc16b3e-501f-48b3-bfe1-ac255725e0f0" valueTypeId="5908a61e-03dd-40a2-86a8-96ce93ad161e"/>
+    <recordKeyType typeId="7b53bd07-761a-449f-b4d6-ce9605198e7f" valueTypeId="acafd0fd-c31c-453c-ae9f-157b9e2500b2"/>
+    <recordType typeId="a44e2205-f68c-476a-8189-7f71bdf7f0b2" valueTypeId="73c03f42-4326-4105-bd5a-1c98ed5c973b"/>
+  </producedTypes>
+  <name>ОстаткиПланируемыхПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки планируемых покупок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c3cb7d2b-a766-4109-9d54-3f1942df9dba">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаток по планируемой покупки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="478e6850-3b1e-417e-87b1-30c342a0e5da">
+    <name>ПланируемаяПокупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируемая покупка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПланируемыеПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

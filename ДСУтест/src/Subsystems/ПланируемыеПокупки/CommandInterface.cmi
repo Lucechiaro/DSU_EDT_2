@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Constant.СчетХраненияДСПланируемыхПокупок.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Constant.ВалютаХраненияДСПланируемыхПокупок.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>Constant.СчетХраненияДСПланируемыхПокупок.StandardCommand.Open</commands>
+      <commands>Constant.ВалютаХраненияДСПланируемыхПокупок.StandardCommand.Open</commands>
+      <commands>CommonForm.НастройкиПланируемыхПокупок.StandardCommand.Open</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.ПланируемыеПокупки.Subsystem.Справочники</subsystems>
+    <subsystems>Subsystem.ПланируемыеПокупки.Subsystem.Документы</subsystems>
+    <subsystems>Subsystem.ПланируемыеПокупки.Subsystem.Отчеты</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

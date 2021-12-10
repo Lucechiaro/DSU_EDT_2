@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fd98f9d-ef04-4f40-be24-996c7da595d4">
+  <producedTypes>
+    <objectType typeId="8e822f8b-1e19-424c-93db-6f80331b5910" valueTypeId="21121660-2ce9-46d9-9fdd-8a5882a048bc"/>
+    <managerType typeId="2c5acc8f-fd77-451c-af11-ebfc132de347" valueTypeId="adf455ea-fffd-4d83-a3e5-ab68e9dc9166"/>
+  </producedTypes>
+  <name>РасходыЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы за период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасходыЗаПериод.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасходыЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="1294884d-eea5-440f-9bca-2d857d3844b9">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8c41855e-34c2-42ea-81bc-fa391c51494e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

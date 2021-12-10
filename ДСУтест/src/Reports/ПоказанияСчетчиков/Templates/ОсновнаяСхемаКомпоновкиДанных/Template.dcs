@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Счётчик</dataPath>
+			<field>Счётчик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Отклонение</dataPath>
+			<field>Отклонение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прирост</dataPath>
+			<field>Прирост</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднийПрирост</dataPath>
+			<field>СреднийПрирост</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	КОЛИЧЕСТВО(ПоказанияСчётчиков.ЗначениеПоказателя) КАК КоличествоИзмерений,
+	ПоказанияСчётчиков.Счётчик,
+	НАЧАЛОПЕРИОДА(ПоказанияСчётчиков.Период, МЕСЯЦ) КАК Месяц,
+	СУММА(ПоказанияСчётчиков.ЗначениеПоказателя) КАК СуммаЗаМесяц
+ПОМЕСТИТЬ Счетчики
+ИЗ
+	РегистрСведений.ПоказанияСчётчиков КАК ПоказанияСчётчиков
+ГДЕ
+	ПоказанияСчётчиков.Период МЕЖДУ ДОБАВИТЬКДАТЕ(&amp;НачалоПериода, МЕСЯЦ, -1) И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	ПоказанияСчётчиков.Счётчик,
+	НАЧАЛОПЕРИОДА(ПоказанияСчётчиков.Период, МЕСЯЦ)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Счетчики.Счётчик КАК Счётчик,
+	Счетчики.Месяц КАК Месяц,
+	ВЫБОР
+		КОГДА Счетчики.КоличествоИзмерений &gt; 0
+			ТОГДА ВЫРАЗИТЬ(Счетчики.СуммаЗаМесяц / Счетчики.КоличествоИзмерений КАК ЧИСЛО(10, 3))
+		ИНАЧЕ 0
+	КОНЕЦ КАК СреднееПоказание,
+	ДОБАВИТЬКДАТЕ(Счетчики.Месяц, МЕСЯЦ, -1) КАК ПредыдущийМесяц
+ПОМЕСТИТЬ ДетальныеПоказания
+ИЗ
+	Счетчики КАК Счетчики
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПоказанияСчётчиков.Счётчик,
+	НАЧАЛОПЕРИОДА(ПоказанияСчётчиков.Период, МЕСЯЦ) КАК Месяц,
+	ВЫРАЗИТЬ(СУММА(ПоказанияСчётчиков.ЗначениеПоказателя) / КОЛИЧЕСТВО(ПоказанияСчётчиков.ЗначениеПоказателя) КАК ЧИСЛО(10, 3)) КАК ПоказаниеМесяца
+ПОМЕСТИТЬ ВыборкаКрайнихЗначений
+ИЗ
+	РегистрСведений.ПоказанияСчётчиков КАК ПоказанияСчётчиков
+ГДЕ
+	ПоказанияСчётчиков.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	ПоказанияСчётчиков.Счётчик,
+	НАЧАЛОПЕРИОДА(ПоказанияСчётчиков.Период, МЕСЯЦ)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТекущийМесяц.Счётчик,
+	ТекущийМесяц.СреднееПоказание - ТаблицаПредыдущийМесяц.СреднееПоказание КАК Прирост,
+	ТекущийМесяц.Месяц
+ПОМЕСТИТЬ ПриростПоМесяцам
+ИЗ
+	ДетальныеПоказания КАК ТекущийМесяц
+		ЛЕВОЕ СОЕДИНЕНИЕ ДетальныеПоказания КАК ТаблицаПредыдущийМесяц
+		ПО ТекущийМесяц.Счётчик = ТаблицаПредыдущийМесяц.Счётчик
+			И ТекущийМесяц.ПредыдущийМесяц = ТаблицаПредыдущийМесяц.Месяц
+ГДЕ
+	НЕ ТаблицаПредыдущийМесяц.СреднееПоказание ЕСТЬ NULL 
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриростПоМесяцам.Счётчик,
+	Выразить(СУММА(ПриростПоМесяцам.Прирост) / КОЛИЧЕСТВО(ПриростПоМесяцам.Месяц) Как Число(10,3) ) КАК СреднийПрирост
+ПОМЕСТИТЬ СреднееЗаПериод
+ИЗ
+	ПриростПоМесяцам КАК ПриростПоМесяцам
+
+СГРУППИРОВАТЬ ПО
+	ПриростПоМесяцам.Счётчик
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриростПоМесяцам.Счётчик,
+	ПриростПоМесяцам.Месяц,
+	ПриростПоМесяцам.Прирост,
+	СреднееЗаПериод.СреднийПрирост,
+	ПриростПоМесяцам.Прирост - СреднееЗаПериод.СреднийПрирост КАК Отклонение
+ИЗ
+	ПриростПоМесяцам КАК ПриростПоМесяцам
+		ЛЕВОЕ СОЕДИНЕНИЕ СреднееЗаПериод КАК СреднееЗаПериод
+		ПО ПриростПоМесяцам.Счётчик = СреднееЗаПериод.Счётчик</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Отклонение</dataPath>
+		<expression>Сумма(Отклонение)</expression>
+		<group>Счётчик</group>
+		<group>Счётчик Иерархия</group>
+	</totalField>
+	<totalField>
+		<dataPath>Прирост</dataPath>
+		<expression>Сумма(Прирост)</expression>
+		<group>Счётчик</group>
+		<group>Счётчик Иерархия</group>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийПрирост</dataPath>
+		<expression>Сумма(СреднийПрирост)</expression>
+		<group>Счётчик</group>
+		<group>Счётчик Иерархия</group>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>КонецПериода(&amp;Период.ДатаОкончания, "День")</expression>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Прирост</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднийПрирост</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Отклонение</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Счётчик</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4fa3ee4a-c73e-447f-9bf8-db1138b19a72</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>f9a2ceb5-b8ed-4f74-a974-910cf675ee42</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a070c80b-ec84-486e-a7e4-fcef968fdeb7</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisQuarter</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>59e6c477-85b1-4c3f-8fde-5c20734eef6b</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Счётчик</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Месяц</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Счётчик</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemChart">
+					<dcsset:point>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Месяц</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:point>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Прирост</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СреднийПрирост</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:ChartType">Column</dcscor:value>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.ПропускатьБазовоеЗначение</dcscor:parameter>
+								<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:ChartLabelType">Value</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.РасположениеЛегенды</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionChartLegendPlacement">Left</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

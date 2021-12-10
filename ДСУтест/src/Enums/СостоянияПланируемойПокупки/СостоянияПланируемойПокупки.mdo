@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c6fe1a5-2513-4778-9b3b-4b23241dee7d">
+  <producedTypes>
+    <refType typeId="867219a6-4d45-416c-9443-edfd5c83029c" valueTypeId="c713938f-8ad8-4556-b67f-ecce6e477fa7"/>
+    <listType typeId="2ced4ee7-a308-4cb8-9604-30c9ad127889" valueTypeId="8e2742bf-fb41-468a-8caf-5d9823d1878e"/>
+    <managerType typeId="91981826-1fb9-481c-94eb-145c13312d21" valueTypeId="f063b817-cc49-42b5-91e4-5571a1d4f31b"/>
+  </producedTypes>
+  <name>СостоянияПланируемойПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния планируемой покупки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fffb77da-ea46-450d-b0bc-c1e3439530b0">
+    <name>Регистрация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="093b38e5-23c3-4735-9059-b4c9c599c4e2">
+    <name>Отказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d91ba9a8-c4ab-46d9-a253-4b52f051fe00">
+    <name>Замораживание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замораживание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1b4eb317-4703-497c-8a0a-9cf96571b8e9">
+    <name>ПеремещениеПодДругуюПокупку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение под другую покупку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="745c08e1-8532-4f20-a773-229681b4db60">
+    <name>Завершение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

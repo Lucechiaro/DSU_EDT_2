@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df7bbc62-ae92-427b-8487-129fdaf996a0">
+  <producedTypes>
+    <selectionType typeId="6b959d9e-395f-47c8-89f8-6d4240edccb5" valueTypeId="c67e8aa2-701a-48f1-804f-75ce09646352"/>
+    <listType typeId="6d7eaa67-6005-4923-b401-9c161a6f7bae" valueTypeId="0f023f98-45ef-4b78-8770-69ff5b0a81d2"/>
+    <managerType typeId="7a7be830-deed-4d06-bd61-70c43874d8d5" valueTypeId="1bfe06cd-ad47-4caa-84b5-9815318379f9"/>
+    <recordSetType typeId="856e19e6-358c-41b6-a456-c867fc34989a" valueTypeId="ea16d501-e971-4281-8575-db6548297e2b"/>
+    <recordKeyType typeId="a847ace0-ce80-43c5-bb8e-4e2cd3ec158b" valueTypeId="489e064d-5755-4423-a319-d9523214bd37"/>
+    <recordType typeId="839cb38d-5f61-4411-80ba-5921072b7353" valueTypeId="56873689-a074-4078-ac32-d2b54bf9f2ec"/>
+    <recordManagerType typeId="6b9b1a94-c464-4caf-b5bc-aba47c543493" valueTypeId="f6b09502-646a-4b22-a8a9-f8f85d365cdb"/>
+  </producedTypes>
+  <name>КурсыВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Курсы валют</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.КурсыВалют.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Курс валюты</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Курсы валют</value>
+  </listPresentation>
+  <resources uuid="20a988b9-3fb6-4ad0-a590-6459765dee22">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+  </resources>
+  <resources uuid="875e6604-827f-419d-91a6-db7a1d81ff03">
+    <name>Кратность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кратность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="f8e293ea-b5cd-4ab7-8d95-690ca5fd12ca">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f7d82e0c-71dc-4827-be49-6d447ee5cacb">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a895d6f9-88a4-4ec6-9f82-732a6c763e25">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

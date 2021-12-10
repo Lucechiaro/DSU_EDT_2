@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="509ee7d4-f4c7-47b9-8953-9fc52d8d9ef7">
+  <producedTypes>
+    <selectionType typeId="ab2d4583-4287-43d6-b30c-fd906a09e8e6" valueTypeId="282610b4-7e73-4cdc-b1c7-d7f56f909848"/>
+    <listType typeId="bdeedf51-76f0-4d42-9cef-abdfdaf3134e" valueTypeId="560cc3a7-121d-41f4-8ce1-18be3cc054be"/>
+    <managerType typeId="dd3a8317-aa5f-4f2c-9922-b798763e82c3" valueTypeId="8aada2f6-a95d-4429-a938-cf0935e03087"/>
+  </producedTypes>
+  <name>РасходыПоДолговымОбязательствам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы по долговым обязательствам</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РасходыПоДолговымОбязательствам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РасходДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.КорректировкаДолга</registeredDocuments>
+  <columns uuid="4e9f30ab-b305-4880-b8de-f8a54ee81ef6">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <references>Document.РасходДенежныхСредств.Attribute.Счет</references>
+  </columns>
+  <columns uuid="9ca8b7a4-c440-4253-aa3d-892a9d44e777">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.РасходДенежныхСредств.Attribute.Валюта</references>
+    <references>Document.КорректировкаДолга.Attribute.ВалютаУвеличения</references>
+  </columns>
+  <columns uuid="5780faca-158b-4b35-b997-0a4858d7b17b">
+    <name>Должник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должник</value>
+    </synonym>
+    <references>Document.РасходДенежныхСредств.Attribute.Должник</references>
+    <references>Document.КорректировкаДолга.Attribute.ДолжникУвеличения</references>
+  </columns>
+  <columns uuid="8820d523-20df-4839-80e0-1603d3e5c446">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РасходДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.КорректировкаДолга.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="f3ef6a74-7123-426a-be23-4bf2445508d7">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.РасходДенежныхСредств.Attribute.Сумма</references>
+    <references>Document.КорректировкаДолга.Attribute.СуммаУвеличения</references>
+  </columns>
+  <forms uuid="a52af8bf-8c04-4af5-ad3f-3dcf95bc6cd7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы по обязательствам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

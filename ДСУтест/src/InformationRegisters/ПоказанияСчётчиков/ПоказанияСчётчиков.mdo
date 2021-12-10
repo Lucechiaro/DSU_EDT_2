@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed07fb96-2201-4072-b898-a1f0ad8e36de">
+  <producedTypes>
+    <selectionType typeId="5c7fb802-d059-49d4-9d8d-f5b9e1edb680" valueTypeId="82c3e54e-d44c-4e97-8dd5-2c27510fc11d"/>
+    <listType typeId="34bb1c4f-7aa7-4ca5-a03b-489ba8792244" valueTypeId="5fc9f5af-f0b3-4527-ad4e-8aa356b89a7e"/>
+    <managerType typeId="f50dabe8-020e-4cf8-8214-aab6327123fc" valueTypeId="52acd077-bbc0-4102-9c98-277577557315"/>
+    <recordSetType typeId="0e51461d-0670-42a8-9d26-4793f025a8c1" valueTypeId="6b7484cb-386f-46c3-96aa-74da86489875"/>
+    <recordKeyType typeId="713f04df-661a-452c-93c4-b38ddc996d66" valueTypeId="aacac029-77d8-41df-8c67-a9eaac9ca839"/>
+    <recordType typeId="34718459-87ef-456b-8dc3-85d2ef3d9c95" valueTypeId="ad466f2f-a6f4-483f-9010-30d0966469ce"/>
+    <recordManagerType typeId="774d6b45-25ae-4818-a6bb-3e6160c7c373" valueTypeId="c58263c9-2921-4f68-9e24-2515d0896a2f"/>
+  </producedTypes>
+  <name>ПоказанияСчётчиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показания счётчиков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ПоказанияСчётчиков.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="8110d2c5-4144-41c8-a5c6-b2426d5b3ce1">
+    <name>ЗначениеПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение показателя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="161a27e3-5c4a-4b73-8995-a978071b0565">
+    <name>Счётчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счётчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Счетчики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ac2b2fc8-d48f-4a15-a0a4-4af4bdfd28c6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d03174c4-6e2c-441d-8769-fed854a952ce">
+  <producedTypes>
+    <managerType typeId="1f002c23-b846-41c1-a0c3-a31e53d3f9e0" valueTypeId="db39dc17-1a20-4a6e-97df-3ae1a79772eb"/>
+    <valueManagerType typeId="a5f7eb44-065b-4043-bef6-2e2f29817bbc" valueTypeId="95921652-9031-4e52-b3ae-dd78180d0680"/>
+    <valueKeyType typeId="83c77ab6-2c4b-58eb-836d-b2d0b74c5d0b" valueTypeId="e96622cb-aa23-5f92-913c-7088c1116de2"/>
+  </producedTypes>
+  <name>СчетХраненияДСПланируемыхПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счет хранения денежных средств, зарезервированных под планирумые покупки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Счета</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.НастройкиПланируемыхПокупок</defaultForm>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

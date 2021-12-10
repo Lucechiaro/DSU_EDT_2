@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73b33140-b415-4984-b366-85126ff829f3">
+  <producedTypes>
+    <objectType typeId="ae973850-c914-4222-b481-fa53665e6371" valueTypeId="52ac75e8-75b1-42c2-8282-495edd8c043c"/>
+    <refType typeId="bfe8ff87-5306-4cb1-a8af-5fa286ce6529" valueTypeId="2ed6e4a9-7369-45f2-bd9f-ef35c09d462c"/>
+    <selectionType typeId="7dba720e-137e-4445-bf57-6e08f405eb52" valueTypeId="f5800ff0-96f2-4df1-bd70-e3a60901a7b7"/>
+    <listType typeId="904e9f90-f7c3-42e1-a52b-00201abc2d42" valueTypeId="48629860-4395-40d5-84cd-530fcf5dd607"/>
+    <managerType typeId="ea7f4c03-1488-4fa9-aa44-d1627f57f08f" valueTypeId="e537fb98-265c-499c-b237-3d399896fd77"/>
+  </producedTypes>
+  <name>РегистрацияПланируемойПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хочу хотелку!</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.РегистрацияПланируемойПокупки.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиПланируемыхПокупок</registerRecords>
+  <registerRecords>InformationRegister.СостоянияПланируемыхПокупок</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="42b232c0-44fe-4eb4-b337-96bc092027f3">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ориентировочная стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b54a671b-5df4-4f9a-9286-0745ae4604fb">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="609ce3e1-9c11-4517-8297-a4953701c13f">
+    <name>ПланируемаяПокупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируемая покупка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПланируемыеПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27d45851-f285-4ee7-bd61-e73e0f115043">
+  <producedTypes>
+    <objectType typeId="760d8060-1ee3-406f-9f57-e61709291d9b" valueTypeId="eaca7a3a-baf4-4ef2-80b1-b5d92503bc6b"/>
+    <refType typeId="ac426b8a-d49f-4c41-bd3e-0ed818bd64ce" valueTypeId="ede881f0-d353-4051-9117-1c8e541b355e"/>
+    <selectionType typeId="6db77eec-bf20-4840-984a-b51f98f85958" valueTypeId="ee34120e-25f8-4d08-bf16-a5956ace6c5b"/>
+    <listType typeId="ecd9eea0-0e16-4d19-bf4e-2930973a3f3f" valueTypeId="697a3436-e306-4498-bc58-2a44ed33a861"/>
+    <managerType typeId="5e26ade6-092f-46da-8ab3-77448bcf0330" valueTypeId="a931a28b-350d-43eb-8cd3-6b372d453821"/>
+  </producedTypes>
+  <name>Счета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Счета.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>75</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Catalog.Счета.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="10c7e09c-c82a-4a6e-bf93-38b79cc76df2">
+    <name>Забалансовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Забалансовый</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d7ac5d83-3e44-4c1d-ab3f-80fa6af7c30b">
+    <name>Ликвидный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ликвидный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f1c18911-3152-4547-8728-44ba73554b07">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="455b1279-9785-4010-856e-86bc801386a2">
+  <producedTypes>
+    <managerType typeId="180f6efb-163b-45c2-8ebe-4929fe0f8af1" valueTypeId="e2ca211e-238b-49cc-b253-d45c88188c13"/>
+    <valueManagerType typeId="a362ac1e-9d70-447d-82bf-70e759ab7608" valueTypeId="7f91c9d3-8bdd-4539-8ab9-0e004d7539be"/>
+    <valueKeyType typeId="9ffc0399-37d0-59b2-86f3-2320feee5c01" valueTypeId="5f94a783-6771-557f-8716-9140ecfcee94"/>
+  </producedTypes>
+  <name>НапоминанияДнейДоСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Напоминания: дней до события</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>1</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

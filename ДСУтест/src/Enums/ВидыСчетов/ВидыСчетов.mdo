@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d942e5ab-6e56-4a0c-a8c0-ee23c4f9baf9">
+  <producedTypes>
+    <refType typeId="e0d3475e-00cf-45ee-96af-5693a717ec67" valueTypeId="aabaf782-118d-4c3d-9cc8-6c3e9c01aefd"/>
+    <listType typeId="f8593298-aa24-4bd7-becd-906a5217989f" valueTypeId="12a5b265-ba58-41a2-a5de-71527c2d2fff"/>
+    <managerType typeId="280522a7-655e-4c35-a7da-b92a89c89abe" valueTypeId="7e77921d-073f-4235-bdf5-0a323f035820"/>
+  </producedTypes>
+  <name>ВидыСчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды счетов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="11c94968-092b-4bd4-b07c-a4cdc0de6e27">
+    <name>Все</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="22ef4649-b674-4e90-9fe6-0f12e13acc42">
+    <name>Балансовые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Балансовые</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="620b19e8-afba-4929-ad7c-61cf087b3708">
+    <name>Забалансовые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Забалансовые</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

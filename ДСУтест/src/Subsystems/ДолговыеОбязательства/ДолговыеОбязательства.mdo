@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b69adbe6-f2ba-4bbc-a071-5af4291fceb1">
+  <name>ДолговыеОбязательства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Долговые обязательства</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Долги</picture>
+  </picture>
+  <content>AccumulationRegister.ДолговыеОбязательства</content>
+  <content>Enum.УдалитьТипыДолговыхОбязательств</content>
+  <content>Enum.ВидыПериодов</content>
+  <content>Report.СостоянияДолговыхОбязательств</content>
+  <content>Report.ДвиженияПоДолговымОбязательствам</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Документы</subsystems>
+</mdclass:Subsystem>

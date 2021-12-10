@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa4b78e3-7030-477f-97ea-b88f16cdd3c5">
+  <producedTypes>
+    <managerType typeId="ecbb7568-2d53-4628-ad61-8c0f5b807d61" valueTypeId="213ad776-2ec7-497d-a4e9-055888dc70fe"/>
+    <valueManagerType typeId="2cab32d3-d475-48c0-8aef-a1ebab329433" valueTypeId="634a3984-6ff7-447e-9085-28ae480436c1"/>
+    <valueKeyType typeId="8119de7a-7c91-5890-86ae-7afb9351887f" valueTypeId="cb85940e-ac57-5a92-922f-4149a9e65217"/>
+  </producedTypes>
+  <name>ВалютаХраненияДСПланируемыхПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюта хранения денежных средств, зарезервированных под планируемые покупки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Валюты</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.НастройкиПланируемыхПокупок</defaultForm>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <quickChoice>DontUse</quickChoice>
+</mdclass:Constant>

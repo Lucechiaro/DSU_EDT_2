@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cae0dd6f-1283-43cb-aa9a-c7555dc11614">
+  <producedTypes>
+    <objectType typeId="269b8341-6b03-454d-8cd1-5ad1d1bdbc08" valueTypeId="7ef57326-c9bf-427e-805f-542d3b5ad363"/>
+    <refType typeId="434315db-e73e-4588-a4e9-b91cd5219783" valueTypeId="e3bc8c18-2896-4bc3-8ab1-21824890bb9f"/>
+    <selectionType typeId="4de39613-25df-42b8-9370-74df9cec356c" valueTypeId="38786bb5-46ed-4828-a612-5db6884163aa"/>
+    <listType typeId="135296f6-aa24-4c71-a315-6cb8b092dfe6" valueTypeId="4605d4aa-95e8-4117-a6a1-de262c82261d"/>
+    <managerType typeId="01a49667-1a05-4574-b369-510eeaf34f87" valueTypeId="2f770fd5-8dfc-4a12-afda-0e6fbaa22674"/>
+  </producedTypes>
+  <name>Счетчики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счетчики</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Счетчики.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ddfe2fff-0151-4d52-a832-b3cd470e6f23">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b4abfcca-bc79-4c37-8f07-e333bdf156d5">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

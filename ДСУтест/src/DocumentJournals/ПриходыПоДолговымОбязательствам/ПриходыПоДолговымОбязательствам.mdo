@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c8ad21b-4a2a-4b96-985f-134b23cf49b7">
+  <producedTypes>
+    <selectionType typeId="7a19e64c-3b68-4cca-b056-7a5db08a8c9d" valueTypeId="d9dde558-b8c3-4844-b085-93af292fa6a9"/>
+    <listType typeId="df98e3ff-3fd4-4729-a84a-5c5bcac8616b" valueTypeId="9f7ae68b-8974-435f-abf7-e055a1bda2a4"/>
+    <managerType typeId="4bd846d5-9cfa-49e3-8591-9c3b9c6ba470" valueTypeId="71aa8628-fcbf-4d98-9049-a542fba7d66c"/>
+  </producedTypes>
+  <name>ПриходыПоДолговымОбязательствам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приходы по долговым обязательствам</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ПриходыПоДолговымОбязательствам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПриходДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.КорректировкаДолга</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="0597aeec-61ff-4060-9d7f-98ce02c8e902">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <references>Document.ПриходДенежныхСредств.Attribute.Счет</references>
+  </columns>
+  <columns uuid="29064f74-2b9e-42b8-a1f3-d3ac97dfc9ea">
+    <name>Должник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должник</value>
+    </synonym>
+    <references>Document.ПриходДенежныхСредств.Attribute.Должник</references>
+    <references>Document.КорректировкаДолга.Attribute.ДолжникСписания</references>
+  </columns>
+  <columns uuid="a6b54e70-35ac-46b1-99aa-0ad5db054a02">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ПриходДенежныхСредств.Attribute.Валюта</references>
+    <references>Document.КорректировкаДолга.Attribute.ВалютаСписания</references>
+  </columns>
+  <columns uuid="591f1d6a-58bc-47d1-b79b-ab421156e231">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ПриходДенежныхСредств.Attribute.Сумма</references>
+    <references>Document.КорректировкаДолга.Attribute.СуммаСписания</references>
+  </columns>
+  <columns uuid="06cf3e23-36f2-4813-b9f1-e36b8a565ab8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПриходДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.КорректировкаДолга.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="a418b035-ef28-4408-b388-d4b8693e9105">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы по обязательствам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

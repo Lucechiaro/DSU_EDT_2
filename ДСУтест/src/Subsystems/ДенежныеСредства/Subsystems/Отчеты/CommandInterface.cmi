@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Report.ИсторияРасходовПоСтатье.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelReports</group>
+      <commands>Report.СальдоЗаПериод.StandardCommand.Open</commands>
+      <commands>Report.ОстаткиПоСчетам.StandardCommand.Open</commands>
+      <commands>Report.РасходыЗаПериод.StandardCommand.Open</commands>
+      <commands>Report.ДоходыЗаПериод.StandardCommand.Open</commands>
+      <commands>Report.ДвиженияПоСчету.StandardCommand.Open</commands>
+      <commands>Report.ИсторияТочекАктуальности.StandardCommand.Open</commands>
+      <commands>Report.ИсторияКурсовВалют.StandardCommand.Open</commands>
+      <commands>Report.АнализРасходов.StandardCommand.Open</commands>
+      <commands>Report.ИсторияРасходовПоСтатье.StandardCommand.Open</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

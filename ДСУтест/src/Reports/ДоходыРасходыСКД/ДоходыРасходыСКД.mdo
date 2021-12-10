@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="487d9861-4deb-4ed3-9c92-3f9c4762001d">
+  <producedTypes>
+    <objectType typeId="6761dfd2-ad08-4b30-9d81-74bc014df0fe" valueTypeId="18490d48-d176-4f57-818a-949811cc19d6"/>
+    <managerType typeId="a6c8a639-0e1d-4b16-be65-52376aa9a50e" valueTypeId="f5c02660-0b90-4e48-bc7c-d771432855a3"/>
+  </producedTypes>
+  <name>ДоходыРасходыСКД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доходы расходы СКД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДоходыРасходыСКД.Form.ФормаОтчета</defaultForm>
+  <forms uuid="71391231-9152-4f5a-8309-596e76852520">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="56c3dba7-984b-485d-85b4-a46d66c88f93">
+    <name>Расходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

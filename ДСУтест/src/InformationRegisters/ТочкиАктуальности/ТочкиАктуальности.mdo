@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c06935c4-76cc-4053-b57e-1ade2017a9a8">
+  <producedTypes>
+    <selectionType typeId="67acbd21-b8a5-42c9-85ad-ba6c53e2caa9" valueTypeId="11ed1e11-37a5-4180-a620-3d45ff56e248"/>
+    <listType typeId="13ca73ee-78c2-4676-8464-b1ad68807f1c" valueTypeId="4cc2a817-181a-4b16-85b1-d55ff2409c34"/>
+    <managerType typeId="05a48593-8232-46bd-82ff-716196c0a6f6" valueTypeId="b57bc73f-47d6-4930-94df-c83116e13371"/>
+    <recordSetType typeId="9cfd174c-1145-4324-9c28-ce95bd78ac19" valueTypeId="a80eb134-edc8-409c-ab48-0f407adbe89a"/>
+    <recordKeyType typeId="bd345306-8c44-43c9-9f61-9953697ea6ec" valueTypeId="30f0c413-01ba-4204-b9c2-555e112c548b"/>
+    <recordType typeId="76d60c70-14f7-41a5-b84e-a7b7041cf160" valueTypeId="8fb6bb81-21db-4a78-b002-5517b72654a8"/>
+    <recordManagerType typeId="303d3d01-76ee-4c35-9954-42e4495667df" valueTypeId="07f941bb-732c-43ff-b5c2-a83570abb053"/>
+  </producedTypes>
+  <name>ТочкиАктуальности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Точки актуальности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Точка актуальности</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Точки актуальности</value>
+  </listPresentation>
+  <resources uuid="a45c1848-6420-4d49-ab77-2ed251169a12">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="764c3fd7-21b0-4b60-90d7-e32f0a4bda84">
+    <name>СуммаУчетн</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма учетн</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="16363771-a22f-4e21-9065-6da08ed073d2">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Счета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6b9f5a42-8f06-440a-bd76-7df800be3b68">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

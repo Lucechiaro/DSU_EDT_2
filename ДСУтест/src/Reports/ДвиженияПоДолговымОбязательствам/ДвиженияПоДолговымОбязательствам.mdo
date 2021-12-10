@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8b8f936-0d21-461e-b055-203f53bcff7c">
+  <producedTypes>
+    <objectType typeId="20f4e5d3-a960-4727-9ab1-3a94a5646ed5" valueTypeId="a76c4cfe-542d-455c-885d-e62071d14d79"/>
+    <managerType typeId="fec12f91-485b-4085-b0d4-8c19473109e4" valueTypeId="e5eb3dde-3ba4-400e-811d-9a82f0aa9143"/>
+  </producedTypes>
+  <name>ДвиженияПоДолговымОбязательствам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения по долговым обязательствам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДвиженияПоДолговымОбязательствам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДвиженияПоДолговымОбязательствам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="c20edaef-6abb-4a9a-ac37-26022ee52e61">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c5621b3c-bc6b-466e-9e6e-5889632891e4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

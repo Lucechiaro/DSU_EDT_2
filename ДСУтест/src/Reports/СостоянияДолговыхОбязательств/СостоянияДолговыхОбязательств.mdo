@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a537f61-e6d4-4343-ac72-c27a90554878">
+  <producedTypes>
+    <objectType typeId="79ce396d-5c68-45db-8753-78146cb521c0" valueTypeId="524d3119-fcc3-4167-9a17-2d0754074a89"/>
+    <managerType typeId="3c4aa9f0-452d-419b-868f-48f7aa3ce9bf" valueTypeId="7ec97617-74e3-41f3-a42d-8470408cffb6"/>
+  </producedTypes>
+  <name>СостоянияДолговыхОбязательств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния долговых обязательств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СостоянияДолговыхОбязательств.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СостоянияДолговыхОбязательств.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="b3b1037f-260a-4866-99ae-86bd9058dd85">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5de4bb41-4645-4c5f-afd7-aceb90527dd3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4b75d525-5609-4b21-849b-4ad4c6ddc72a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

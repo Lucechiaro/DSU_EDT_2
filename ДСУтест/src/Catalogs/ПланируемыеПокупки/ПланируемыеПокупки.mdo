@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="556f4cbe-84c0-4322-8b20-5903ad1b24bb">
+  <producedTypes>
+    <objectType typeId="8da0b898-886b-4d32-a8e6-e94f211dfb19" valueTypeId="81e76de8-8c2d-44cb-9e36-f3ce567680c7"/>
+    <refType typeId="859edda5-66d2-44d2-9c18-9db9eb233442" valueTypeId="2a86e8a5-a1bb-4047-ad32-d9187d429e65"/>
+    <selectionType typeId="44b26048-1fc2-48a5-baa1-668fab973a7b" valueTypeId="484b22b4-2d08-4d54-bfd2-62ac504eba51"/>
+    <listType typeId="e17ecf76-4a35-40e2-b8e3-85bc49194b63" valueTypeId="c1360ad7-9f30-4be8-8caa-72d46e4167e3"/>
+    <managerType typeId="acbaf483-0615-40dc-8766-80497b852680" valueTypeId="b3791353-902f-4443-b770-2910146cc3d2"/>
+  </producedTypes>
+  <name>ПланируемыеПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планируемые покупки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПланируемыеПокупки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПланируемыеПокупки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Хотелка</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Хотелки</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c25d594c-a84f-4e83-8f5e-d609589b9b31">
+    <name>ПлановаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3dad7487-3228-458f-a5b3-83372f5c20f9">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <commands uuid="8e462375-d3cb-4ad4-93b9-c6ff3738a212">
+    <name>СоздатьПланируемуюПокупку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создать планируемую покупку</value>
+    </synonym>
+    <group>ActionsPanelCreate</group>
+    <commandParameterType/>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Создаем новый элемент справочника &quot;Планируемые покупки&quot;</value>
+    </toolTip>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

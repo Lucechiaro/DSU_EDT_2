@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="584a6751-4014-4f4b-9166-a3ea7f4094d1">
+  <producedTypes>
+    <objectType typeId="5c2a9d37-fce5-4707-b82d-f474f2ca6a1a" valueTypeId="c7c2567f-9bb1-40ba-be32-1efbb72f79e2"/>
+    <managerType typeId="c39513c6-ceed-4ca7-b9e4-8a8d70f07ac0" valueTypeId="143b7dee-653c-487c-8ec6-1f48393a7ae9"/>
+  </producedTypes>
+  <name>ДвиженияПоСчету</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения по счету</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДвиженияПоСчету.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b85ae1a6-2e72-4d75-b49a-d02f5211e97e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b6a9d53c-4422-4fbc-9de2-8693d1368105">
+    <name>ДвиженияДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="72293760-c296-4ba0-ae60-e4f05e073c38">
+    <name>Остатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="02c053f6-9537-41f8-95dd-92b6b89328de">
+    <name>Остатки1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки1</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

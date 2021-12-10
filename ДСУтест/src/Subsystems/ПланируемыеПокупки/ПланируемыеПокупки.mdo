@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95234839-7d15-445d-9484-8dde4f12d94b">
+  <name>ПланируемыеПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хотелки</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПланируемыеПокупки</picture>
+  </picture>
+  <content>CommonModule.КонтрольОстатков</content>
+  <content>CommonModule.ОбщегоНазначения</content>
+  <content>Role.Основная</content>
+  <content>Enum.ВидыПериодов</content>
+  <content>Enum.СостоянияПланируемойПокупки</content>
+  <content>Constant.ВалютаХраненияДСПланируемыхПокупок</content>
+  <content>Constant.СчетХраненияДСПланируемыхПокупок</content>
+  <content>AccumulationRegister.ОстаткиПланируемыхПокупок</content>
+  <content>InformationRegister.СостоянияПланируемыхПокупок</content>
+  <content>CommonForm.НастройкиПланируемыхПокупок</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Документы</subsystems>
+  <subsystems>Отчеты</subsystems>
+</mdclass:Subsystem>

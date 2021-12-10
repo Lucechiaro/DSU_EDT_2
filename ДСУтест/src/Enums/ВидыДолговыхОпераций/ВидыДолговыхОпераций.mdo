@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd5a5c9c-e97e-46dd-bf60-de44966f6a0c">
+  <producedTypes>
+    <refType typeId="0f81d9ca-b868-450b-bb2f-65f985a70e4b" valueTypeId="d5dcd3c9-c659-4f66-93ab-428d9b1314b5"/>
+    <listType typeId="7d527a43-845b-4b7b-9692-23cb7fbee9f4" valueTypeId="23018757-566e-4af3-9b14-096f42a74a85"/>
+    <managerType typeId="6a2c90de-9b2a-4db9-92d8-51bda1695fd6" valueTypeId="262f2949-7444-40ef-9cb2-2a5d7a6623cf"/>
+  </producedTypes>
+  <name>ВидыДолговыхОпераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды долговых операций</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b2c6a0e4-5001-4073-8c96-7208d06c88fb">
+    <name>СписаниеДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание долга</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fa2382eb-f332-47e4-987f-9e2237204a62">
+    <name>УвеличениеДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Увеличение долга</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="63c9431b-c3d8-40cb-8558-b4224f4e5377">
+    <name>ПереносДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос долга</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

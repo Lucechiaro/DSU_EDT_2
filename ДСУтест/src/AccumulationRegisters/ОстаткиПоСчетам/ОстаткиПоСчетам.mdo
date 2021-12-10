@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51faf03d-6da6-46e1-bbd6-1312f1ffded1">
+  <producedTypes>
+    <selectionType typeId="de660c3c-f8ee-4147-a206-9f3ac6f85bcf" valueTypeId="d0896078-4c04-446c-8988-b441220096dd"/>
+    <listType typeId="f1ac50d5-b73a-4d53-be47-2ba84f4433a1" valueTypeId="1645f0a7-2fb7-4a8f-9de6-9231f8d82a00"/>
+    <managerType typeId="53eae530-c504-468c-aa05-0bda8c899f70" valueTypeId="c00d3025-9c29-4a18-ab74-056fadd1327e"/>
+    <recordSetType typeId="e8884849-d302-477e-a9fe-19918175fbc8" valueTypeId="c62a5f42-dbe9-41ba-bc6f-869773470d6a"/>
+    <recordKeyType typeId="b01b2b8e-5e53-45ec-8132-d21bea535811" valueTypeId="afab56ba-949d-49a1-9e0a-39276e157d99"/>
+    <recordType typeId="b4986673-8b23-458f-a7c2-f430c01436cc" valueTypeId="2b43f684-96f7-4ebd-870b-68b5f617a95a"/>
+  </producedTypes>
+  <name>ОстаткиПоСчетам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки по счетам</value>
+  </synonym>
+  <resources uuid="0d2398ff-313e-4d57-a27e-8fb10d3a0663">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="46be32a8-70f3-467e-9bdf-876d7188b18b">
+    <name>СуммаУчетн</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма учетн</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="5fc731a3-bb33-4b8c-a608-551b6d802ede">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Счета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f2c3743f-2699-43a2-8cab-8bca7fa882c7">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

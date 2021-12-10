@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa318953-b241-4a29-9daa-035d79380d7b">
+  <producedTypes>
+    <selectionType typeId="4ad7cc49-d611-4344-b79b-f1e08094e1c3" valueTypeId="31383f4d-5659-4b92-8c3a-8625c28f06e8"/>
+    <listType typeId="e3db1a84-9128-4bf5-aee7-350e153484d2" valueTypeId="ac961197-c4af-4fd2-a645-b4df0952dfbe"/>
+    <managerType typeId="07d28a56-1410-4aa2-9054-9e47fd34f4f4" valueTypeId="6ec33685-6f2a-47df-8a80-5823701451d7"/>
+    <recordSetType typeId="5ed1762a-28ac-4405-ba69-26f456b2834e" valueTypeId="dec80072-d6da-45a2-8507-f820f293dcd1"/>
+    <recordKeyType typeId="01f79ee9-030e-42d0-90ce-7fbd6971edbb" valueTypeId="3c7fa735-7ecb-499d-b15f-053f2156072c"/>
+    <recordType typeId="52bf3b2a-2133-40e7-916b-8e678a31d684" valueTypeId="f20627b8-7b1e-4dd3-913f-28ef2ca6f880"/>
+    <recordManagerType typeId="faffbf6f-7c84-4461-9d44-fbc6cf0c6a34" valueTypeId="678c5152-2bcc-45e7-aebf-ec9374519c89"/>
+  </producedTypes>
+  <name>Тарифы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.Тарифы.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="20893ef6-9773-4046-855e-c507280e04e9">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f0072c2a-afbc-4f17-bdd4-779f71c3228e">
+    <name>Счётчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счётчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Счетчики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="13cd6649-ef11-4383-82e0-3db9585d75f9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df330a53-5b82-4ecd-aedd-dfe8d69a96dc">
+  <producedTypes>
+    <objectType typeId="61a21f19-c17a-48fd-90ce-2a8837a5f9de" valueTypeId="5de08a44-d515-4a4d-bb90-4c0880018212"/>
+    <refType typeId="ff822e9f-9eeb-4048-a4ea-89f1d2ed405f" valueTypeId="2db8a096-2501-4f80-a69f-63e9cda5d248"/>
+    <selectionType typeId="ae53ce48-888a-46df-aa48-23165d171821" valueTypeId="e5ede2f9-8c7c-4ac8-9e72-6a3c2b10bd34"/>
+    <listType typeId="3e11a8be-3a6c-4044-86db-f541508dd752" valueTypeId="58302d28-d10e-47e3-a047-ab9794161872"/>
+    <managerType typeId="4bec19f9-a576-4968-ad0d-231215f4cbef" valueTypeId="0cdd3ab9-2c3c-4e10-aace-592f091c4ed2"/>
+  </producedTypes>
+  <name>Валюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Валюты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Catalog.Валюты.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="460a2b80-0392-4c0a-b66a-4f4b23a2876e">
+    <name>Представление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb81c147-664a-4d00-8088-3cbf4f85ec84">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="42056c82-dd44-4c6f-a855-3fd33a4d58cd">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

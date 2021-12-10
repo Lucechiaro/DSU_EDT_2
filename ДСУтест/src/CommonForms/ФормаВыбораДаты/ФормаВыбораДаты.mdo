@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f48eb5af-569d-452a-886d-dc3d96fa318c">
+  <name>ФормаВыбораДаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма выбора даты</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e596b56-c302-4105-a5e7-5a93bd9077f8">
+  <producedTypes>
+    <refType typeId="9fb78d78-7be0-4c09-be3e-0398f4f8853a" valueTypeId="f52f46f8-47c7-4bc8-aaac-29667230c054"/>
+    <listType typeId="9714bf82-b9f5-4642-ad5b-63b4aa25e89e" valueTypeId="1f63ce6d-5cc9-4fa6-a52e-e7e38bca2d9a"/>
+    <managerType typeId="d6ae6068-b7db-4102-978d-5882e6939665" valueTypeId="7ee383fa-5724-4063-9410-4b895f6fb62f"/>
+  </producedTypes>
+  <name>УдалитьТипыДолговыхОбязательств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить типы долговых обязательств</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="eca41a3a-43e4-4a47-8adb-4c00a1de24a9">
+    <name>Долг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долг (нам должны)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0ceb75fa-d0f7-4376-8c10-8519c3f066dc">
+    <name>Заем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заем (мы занимаем)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

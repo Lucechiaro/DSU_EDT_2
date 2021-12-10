@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a8a8fa7-f62d-4adf-866e-68faa4f387dc">
+  <producedTypes>
+    <objectType typeId="e5745db4-2486-4c43-8813-656bdacc82c6" valueTypeId="5205741f-6a7c-4fec-92ec-40583c6ce26a"/>
+    <managerType typeId="24d22ae3-063b-4cc9-bc0a-3f9a31dd196c" valueTypeId="75ccb5fd-ed51-4871-8844-3cc9a10392ab"/>
+  </producedTypes>
+  <name>КонсольЗапросов_82</name>
+  <synonym>
+    <key>ru</key>
+    <value>Консоль запросов 8.2 для управляемого приложения</value>
+  </synonym>
+  <comment>Консоль повторяет интерфейс и основные возможноси Консоли запросов 8.1, а также позволяет получать результаты пакетных запросов и временных таблиц</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КонсольЗапросов_82.Form.Форма</defaultForm>
+  <auxiliaryForm>DataProcessor.КонсольЗапросов_82.Form.Форма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="6c834f73-ad37-4fb4-9917-3b807a26768e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ed78c9c7-cbda-4a3f-8a1f-00aeabc7d195">
+    <name>ФормаВложеннойТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вложенной таблицы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6b167261-4c87-4aad-a96e-bfbc3866cac3">
+    <name>МакетРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет результата</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

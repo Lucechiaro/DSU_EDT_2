@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5c3fcd5-703a-40b2-a125-97651bf467cd">
+  <producedTypes>
+    <objectType typeId="69e08d12-59e9-4092-8a19-9f581a676439" valueTypeId="d059d4e0-290a-45b1-b4df-e4b4bebccea2"/>
+    <refType typeId="bd5e7855-8c84-4782-83c7-483c32fea25d" valueTypeId="33a8ec2c-227b-43b5-9e92-0153a0fb4d32"/>
+    <selectionType typeId="1d84f14a-18f9-4200-a5bf-87e2e492a504" valueTypeId="1c1cb97e-0209-4273-9220-fe68f5d1bff6"/>
+    <listType typeId="7603cb02-b16b-43f3-aacf-a7639e5656d6" valueTypeId="f6a11d3f-d105-441a-b565-7c31d8801e69"/>
+    <managerType typeId="838197f2-6ce7-47ee-800c-5bcfb11d68d4" valueTypeId="4a9e8c21-26d7-4d62-a54f-5fc58f081374"/>
+  </producedTypes>
+  <name>Должники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Должники.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Должники.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

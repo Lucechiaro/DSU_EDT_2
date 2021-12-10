@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d31a1c5-aa5a-40b5-b88f-f5f5eacbd4d3">
+  <producedTypes>
+    <objectType typeId="2989d202-3e01-464c-85dd-a9ca97ceefe8" valueTypeId="7c951bd9-ef5d-4f22-8793-47665c1c36c6"/>
+    <refType typeId="81bc72fb-7454-470e-9743-0a68be4e814a" valueTypeId="64c4ec90-8fc7-456f-8971-c30761f4f8de"/>
+    <selectionType typeId="9a64d846-78d8-4849-aa66-d95346207bbc" valueTypeId="1c5118a9-a097-4b17-8b70-a3ae249465eb"/>
+    <listType typeId="a9886bb3-3ce9-4be8-b0c7-8eaa3f75d0a0" valueTypeId="851ac4f9-2cd2-417c-b550-86f8d2671784"/>
+    <managerType typeId="6e26a9e5-f4ca-4cd6-986a-ca79cc4e18b6" valueTypeId="b2965263-ae25-4be0-a900-7ca32206c1ac"/>
+  </producedTypes>
+  <name>ИзменениеПланируемойПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение планируемой покупки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИзменениеПланируемойПокупки.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Изменение хотелки</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиПланируемыхПокупок</registerRecords>
+  <registerRecords>InformationRegister.СостоянияПланируемыхПокупок</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="17ef051e-0f31-4b39-8f29-ac3399c3e2e0">
+    <name>ПокупкаИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПланируемыеПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45829960-4b66-478f-9c48-4acb0fff9d99">
+    <name>ПокупкаПриемник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка приемник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПланируемыеПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7ea0920f-b0aa-4615-ac85-7c6d9dff88d7">
+    <name>ПричинаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина изменения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияПланируемойПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bd179add-097a-48ce-b517-6159f353e6cc">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

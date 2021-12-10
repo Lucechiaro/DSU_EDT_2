@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7161d187-982a-4e2f-8337-dbf98e82138f">
+  <producedTypes>
+    <objectType typeId="5453271e-e2fa-452c-8dbc-8ac1194b75f6" valueTypeId="58f5fc3a-1a2f-431e-94cf-a61b9ef340f2"/>
+    <refType typeId="449fb901-00d3-42de-b52e-89a653393099" valueTypeId="ff187eed-5dfa-4d10-8eda-0ec5fb6ecff0"/>
+    <selectionType typeId="d7ac5f55-5edc-4bd6-820f-fdac54e6a0f0" valueTypeId="862f0130-0fe5-4734-8cd2-ce033e74144f"/>
+    <listType typeId="aea5e8c2-7b52-4d87-ab0a-e3edda670d1c" valueTypeId="7fe0998a-9a3c-47fd-8351-8679002144a8"/>
+    <managerType typeId="ecfba4e8-8bd4-41ac-903c-70092b82ec73" valueTypeId="74dcdf9b-e5b0-4350-a316-beb53410bbfa"/>
+  </producedTypes>
+  <name>СтатьиДДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статьи движения</value>
+  </synonym>
+  <comment>Статьи движения денежных средств</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатьиДДС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатьиДДС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>75</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="ae8af09f-361f-4199-8d51-bf54f2deca1b">
+      <name>Комиссия</name>
+      <description>Комиссия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="d34aee47-ac8a-48fe-85a9-ce57eb8e5cea">
+      <name>КурсоваяРазница</name>
+      <description>Курсовая разница</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="93a26c84-aeb2-4bf0-8a44-d0fc438941d9">
+      <name>СписаниеДенежныхСредств</name>
+      <description>Списание денежных средств</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <defaultObjectForm>Catalog.СтатьиДДС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.СтатьиДДС.Form.ФормаЭлемента</defaultFolderForm>
+  <defaultListForm>Catalog.СтатьиДДС.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="1955745a-66a2-486a-914d-ea47d0b7b85e">
+    <name>Обязательная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обязательная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>Use</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef0cdcd2-ff6c-4f31-a0b9-e4c3690939d1">
+    <name>ПланируетсяПоСреднему</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируется по среднему</value>
+    </synonym>
+    <type>
+      <types>EnumRef.БулевоДаНет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4db3b87e-e8d5-415e-82f9-47ec01861f05">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eeeba3af-afff-4536-8820-bf6ff74a5391">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

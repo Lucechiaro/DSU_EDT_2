@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2eb91efe-f9b4-4d41-ae07-aff6cce14ad6">
+  <producedTypes>
+    <objectType typeId="16840a9f-0d9d-4a17-8f08-a17e83e6917f" valueTypeId="64b20067-c39a-444f-992b-ebd750b4afbe"/>
+    <managerType typeId="1f983f3c-84f4-47c1-9ca1-cc91843e42d8" valueTypeId="c046af00-5fe7-4530-9e74-8bf59356fc9b"/>
+  </producedTypes>
+  <name>СальдоЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сальдо за период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СальдоЗаПериод.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="d9055da5-7224-42a4-b850-e60d5e34ab74">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Счета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="41fe842b-6b49-4c9c-aa39-2d63ecb096a2">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fdb7adb1-1f19-4734-9062-cb788dcdb456">
+    <name>ВалютаПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта пересчета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="20196350-2b03-4a7d-82e5-7795c34f34e9">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5f34fece-27bf-4604-8215-3f6a556a7df3">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="980e6765-1559-47c9-a799-da776d87d526">
+    <name>СтатьяДДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья ДДС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиДДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b5a68c8b-039b-4b7b-b6ba-fd7569c6ac4a">
+    <name>ВидОтображенияСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отображения счетов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="911c785f-e32d-47e5-ad93-68314e8a94ed">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fdaeeac5-92e5-4310-b937-a588d1717219">
+    <name>МакетСтарый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет старый</value>
+    </synonym>
+  </templates>
+  <templates uuid="078074b2-35e1-4063-81dd-e4f6a13338c8">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

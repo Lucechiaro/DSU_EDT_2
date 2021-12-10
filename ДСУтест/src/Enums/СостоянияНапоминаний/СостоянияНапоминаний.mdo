@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5dd77e21-4949-4145-a213-27063e8be821">
+  <producedTypes>
+    <refType typeId="0d1f9144-87f7-4fc6-9376-470d4a950c96" valueTypeId="8498a0cc-5050-4762-ad0e-c6f84a4b9fcb"/>
+    <listType typeId="318d2426-9bbe-4101-89d6-bd7b30149dfc" valueTypeId="8a270125-4ebc-4bcf-a5e4-2a062581119b"/>
+    <managerType typeId="0a2e5437-7435-431e-9c7c-fb9d070a9fe8" valueTypeId="7ffd6e8f-2c87-485e-994d-5df84f9bd09d"/>
+  </producedTypes>
+  <name>СостоянияНапоминаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния напоминаний</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f891223f-04ea-4e4e-aae7-337c0f4e3f8c">
+    <name>Активно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca4632df-97ca-4fbc-b377-7efd2da02001">
+    <name>Прекращено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прекращено</value>
+    </synonym>
+    <comment>Действие напоминания прекращено пользователем</comment>
+  </enumValues>
+  <enumValues uuid="98462272-e998-47e2-9642-eae023e222ea">
+    <name>Завершено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершено</value>
+    </synonym>
+    <comment>Напоминание завершило срок своего использования</comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2d28c14-f151-484d-af56-77a4a7b238a9">
+  <producedTypes>
+    <refType typeId="4438d15a-770d-44ba-8ede-0b6757f90a06" valueTypeId="802eee1d-ec36-4bf9-946e-9bfffeaf222d"/>
+    <listType typeId="40000487-d1da-4b3c-9be9-745d68c79a95" valueTypeId="7abfa9f8-a0a2-4331-a815-a0c16a701afc"/>
+    <managerType typeId="e14977d9-6d1d-40d7-92aa-158f999c13ab" valueTypeId="c0b5d2fe-2ff3-41b8-9e7b-38dabdaee657"/>
+  </producedTypes>
+  <name>ВидыПериодов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды временных интервалов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9533b13a-add2-4d05-8253-1e193eee99a0">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8b92abe8-c0bb-409e-a6e8-d9a328883690">
+    <name>Неделя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неделя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1d267db9-9e72-4364-82ad-084ab87e3e56">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ac61629f-20bc-466b-867e-a50b083324a6">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

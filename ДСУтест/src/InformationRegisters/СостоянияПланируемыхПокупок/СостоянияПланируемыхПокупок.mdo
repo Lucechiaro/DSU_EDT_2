@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="445d6dd4-1e31-4c33-a178-6318f24d13ff">
+  <producedTypes>
+    <selectionType typeId="7cf8bcf6-6046-4987-8e75-7d492b6d5eaa" valueTypeId="42b4b1ba-0bb3-4b23-b5e3-fed081bf775f"/>
+    <listType typeId="86eb8b99-8e3d-4a23-98fe-bc06cfffbc68" valueTypeId="78f074f7-d2f6-4694-ad95-c335c78fadb8"/>
+    <managerType typeId="1be64ac4-0f6f-4330-a497-515c95e41ef0" valueTypeId="16898606-8725-4e4c-9a72-d8d522c00023"/>
+    <recordSetType typeId="b3bc1d13-317d-4557-8098-60f3fcacbb5d" valueTypeId="e57b13cf-9293-4d39-991f-4ea866acdeb4"/>
+    <recordKeyType typeId="1bfade3b-7081-4e1f-ad86-e98cc333faf6" valueTypeId="d377f5ca-aaf8-4f21-b9ec-363ce7a99b05"/>
+    <recordType typeId="3e9d89f4-df40-49c8-9f63-7fb795142748" valueTypeId="45dd5603-dd8a-42ea-87a1-95b3a0ddf22e"/>
+    <recordManagerType typeId="64fde33a-fbe1-47e4-a08a-0826a2cdb527" valueTypeId="9c69daec-9bd7-485e-bd25-7a18285d4655"/>
+  </producedTypes>
+  <name>СостоянияПланируемыхПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния планируемых покупок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="b773a634-6ab7-4b76-8020-ddede99dc57b">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ориентировочная стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="15345a56-268e-4da0-b51d-0d318b80a4f6">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияПланируемойПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="93cca5f0-d11c-4a38-9768-c717158d3b05">
+    <name>ПланируемаяПокупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируемая покупка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПланируемыеПокупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

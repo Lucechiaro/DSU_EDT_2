@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e1753e0-e8e9-406c-a5cd-75dd0478e4ec">
+  <name>Напоминания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Напоминания</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Время</picture>
+  </picture>
+  <content>Catalog.НастройкиНапоминаний</content>
+  <content>Constant.НапоминанияДнейДоСобытия</content>
+  <content>Task.Напоминание</content>
+  <content>Enum.СостоянияНапоминаний</content>
+  <content>DataProcessor.КонсольЗапросов_82</content>
+  <content>CommonForm.НастройкиНапоминаний</content>
+</mdclass:Subsystem>

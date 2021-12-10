@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Document.ПриходДенежныхСредств.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.РасходДенежныхСредств.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:ac078283-b794-4f44-80fd-d85bdf454d55</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>DocumentJournal.ОбщийЖурналДолговыхДокументов.StandardCommand.OpenList</commands>
+      <commands>Document.ПриходДенежныхСредств.StandardCommand.OpenList</commands>
+      <commands>DocumentJournal.ПриходыПоДолговымОбязательствам.StandardCommand.OpenList</commands>
+      <commands>Document.РасходДенежныхСредств.StandardCommand.OpenList</commands>
+      <commands>DocumentJournal.РасходыПоДолговымОбязательствам.StandardCommand.OpenList</commands>
+      <commands>Document.КорректировкаДолга.StandardCommand.OpenList</commands>
+      <commands>0:ac078283-b794-4f44-80fd-d85bdf454d55</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

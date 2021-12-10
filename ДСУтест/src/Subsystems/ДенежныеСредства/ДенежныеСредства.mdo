@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4b0ca8b-ef5c-4082-b503-13d341afeb03">
+  <name>ДенежныеСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Денежные средства</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Деньги</picture>
+  </picture>
+  <content>CommonModule.КонтрольОстатков</content>
+  <content>CommonModule.ОбщегоНазначения</content>
+  <content>CommonPicture.КнопкаОК</content>
+  <content>CommonPicture.КнопкаОтмена</content>
+  <content>CommonPicture.Добавить</content>
+  <content>60d1ab35-736e-4cf1-a270-7b510e9bdf01</content>
+  <content>CommonPicture.ОбщаяКартинка1</content>
+  <content>CommonPicture.Сформировать</content>
+  <content>Document.РасходДенежныхСредств</content>
+  <content>Document.ПриходДенежныхСредств</content>
+  <content>Document.ПеремещениеДенежныхСредств</content>
+  <content>AccumulationRegister.Доходы</content>
+  <content>Enum.ВидыПериодов</content>
+  <content>AccumulationRegister.Расходы</content>
+  <content>CommonPicture.Деньги</content>
+  <content>Catalog.Валюты</content>
+  <content>485e30b9-e79d-48af-b284-1431b6e65165</content>
+  <content>Report.ОстаткиПоСчетам</content>
+  <content>Report.ДоходыРасходыСКД</content>
+  <content>Report.РасходыЗаПериод</content>
+  <content>Constant.ОсновнаяВалютаУчёта</content>
+  <content>Catalog.Счета</content>
+  <content>Catalog.СтатьиДДС</content>
+  <content>Report.ДоходыЗаПериод</content>
+  <content>Report.ИсторияКурсовВалют</content>
+  <content>InformationRegister.КурсыВалют</content>
+  <content>CommonForm.ФормаВалютыУчета</content>
+  <content>InformationRegister.ТочкиАктуальности</content>
+  <content>CommonForm.ФормаВводаКурсовВалют</content>
+  <content>CommonForm.ФормаВводаРасходов</content>
+  <content>CommonCommand.СоздатьТочкуАктуальности</content>
+  <content>CommonCommand.АктуализироватьКурсыВалют</content>
+  <content>Report.СальдоЗаПериод</content>
+  <content>Report.ИсторияТочекАктуальности</content>
+  <content>CommonCommand.ПодсчитатьЛиквиды</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Документы</subsystems>
+  <subsystems>Отчеты</subsystems>
+  <subsystems>Планирование</subsystems>
+</mdclass:Subsystem>

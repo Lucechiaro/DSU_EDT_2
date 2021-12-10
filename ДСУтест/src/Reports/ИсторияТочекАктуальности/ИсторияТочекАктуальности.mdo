@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b8d5027-1d0c-4e58-a580-15c9c67a3105">
+  <producedTypes>
+    <objectType typeId="b24cc734-384b-47b0-a105-8120c498ce4a" valueTypeId="489963b1-96b1-42f9-96ac-8e885909d658"/>
+    <managerType typeId="c060c5b5-4169-412e-87b5-45bc4aa3191e" valueTypeId="223a072e-ae12-45c3-a65f-e31f5f57b106"/>
+  </producedTypes>
+  <name>ИсторияТочекАктуальности</name>
+  <synonym>
+    <key>ru</key>
+    <value>История точек актуальности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ИсторияТочекАктуальности.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ИсторияТочекАктуальности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="6ddd0f2b-7bba-4765-abb8-42b212909479">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3a6a9625-4410-49ca-a0fc-582e881481a5">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="8d4ee2a6-ed3b-4355-83f4-d829454255b8">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e61247ba-b321-4b57-a9db-5f5062a2fa73">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

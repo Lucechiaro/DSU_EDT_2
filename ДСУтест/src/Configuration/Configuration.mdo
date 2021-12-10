@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d1b7251-b3c3-420c-b274-320d1827db13">
+  <name>ДСУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Домашняя система учёта</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="83ba9214-13ab-453d-99d6-848840228948"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="32913ef0-e69e-46d2-b136-83f0cd81e60f"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="0fd12725-1770-4065-9143-f5f18cf62fe7"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="f2dcf8ed-e41c-44a1-a8d2-3d1043f8d63b"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="42ecb894-6d5f-4add-bd40-69685ed81282"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="0bdbe80f-aedf-49f2-aac3-dd6db11bed08"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="39438f26-38d2-4d78-9916-942361d42a44"/>
+  <configurationExtensionCompatibilityMode>8.3.18</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.Основная</defaultRoles>
+  <useOrdinaryFormInManagedApplication>true</useOrdinaryFormInManagedApplication>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <briefInformation>
+    <key>ru</key>
+    <value>Домашняя система учёта</value>
+  </briefInformation>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.18</compatibilityMode>
+  <languages uuid="96f7829f-7ba4-44a4-acc9-a0549f4f759c">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ДенежныеСредства</subsystems>
+  <subsystems>Subsystem.ПланируемыеПокупки</subsystems>
+  <subsystems>Subsystem.ДолговыеОбязательства</subsystems>
+  <subsystems>Subsystem.Счетчики</subsystems>
+  <subsystems>Subsystem.Напоминания</subsystems>
+  <styleItems>StyleItem.ЦветНадписиДеньНедели</styleItems>
+  <commonPictures>CommonPicture.КнопкаОК</commonPictures>
+  <commonPictures>CommonPicture.КнопкаОтмена</commonPictures>
+  <commonPictures>CommonPicture.Добавить</commonPictures>
+  <commonPictures>CommonPicture.ОбщаяКартинка1</commonPictures>
+  <commonPictures>CommonPicture.Сформировать</commonPictures>
+  <commonPictures>CommonPicture.Деньги</commonPictures>
+  <commonPictures>CommonPicture.Долги</commonPictures>
+  <commonPictures>CommonPicture.Счетчики</commonPictures>
+  <commonPictures>CommonPicture.ПланируемыеПокупки</commonPictures>
+  <commonPictures>CommonPicture.Время</commonPictures>
+  <sessionParameters>SessionParameter.ТочкаАктуальности</sessionParameters>
+  <roles>Role.Основная</roles>
+  <commonModules>CommonModule.КонтрольОстатков</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.УправлениеНапоминаниями</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>
+  <commonModules>CommonModule.Глобальный</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияКлиент</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияСервер</commonModules>
+  <commonCommands>CommonCommand.СоздатьТочкуАктуальности</commonCommands>
+  <commonCommands>CommonCommand.АктуализироватьКурсыВалют</commonCommands>
+  <commonCommands>CommonCommand.ПодсчитатьЛиквиды</commonCommands>
+  <constants>Constant.ОсновнаяВалютаУчёта</constants>
+  <constants>Constant.СчетХраненияДСПланируемыхПокупок</constants>
+  <constants>Constant.ВалютаХраненияДСПланируемыхПокупок</constants>
+  <constants>Constant.НапоминанияДнейДоСобытия</constants>
+  <commonForms>CommonForm.ФормаВалютыУчета</commonForms>
+  <commonForms>CommonForm.НастройкиПланируемыхПокупок</commonForms>
+  <commonForms>CommonForm.НастройкиНапоминаний</commonForms>
+  <commonForms>CommonForm.ФормаВводаКурсовВалют</commonForms>
+  <commonForms>CommonForm.ФормаВводаРасходов</commonForms>
+  <commonForms>CommonForm.ВводПоказателейСчетчиков</commonForms>
+  <commonForms>CommonForm.ФормаВыбораДаты</commonForms>
+  <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.Счета</catalogs>
+  <catalogs>Catalog.СтатьиДДС</catalogs>
+  <catalogs>Catalog.Счетчики</catalogs>
+  <catalogs>Catalog.ПланируемыеПокупки</catalogs>
+  <catalogs>Catalog.НастройкиНапоминаний</catalogs>
+  <catalogs>Catalog.Должники</catalogs>
+  <documents>Document.РасходДенежныхСредств</documents>
+  <documents>Document.ПриходДенежныхСредств</documents>
+  <documents>Document.ПеремещениеДенежныхСредств</documents>
+  <documents>Document.РегистрацияПланируемойПокупки</documents>
+  <documents>Document.ИзменениеПланируемойПокупки</documents>
+  <documents>Document.КорректировкаДолга</documents>
+  <documents>Document.ПлановыеДоходыРасходы</documents>
+  <documentJournals>DocumentJournal.РасходыПоДолговымОбязательствам</documentJournals>
+  <documentJournals>DocumentJournal.ПриходыПоДолговымОбязательствам</documentJournals>
+  <documentJournals>DocumentJournal.ОбщийЖурналДолговыхДокументов</documentJournals>
+  <enums>Enum.ВидыСчетов</enums>
+  <enums>Enum.УдалитьТипыДолговыхОбязательств</enums>
+  <enums>Enum.ВидыПериодов</enums>
+  <enums>Enum.СостоянияПланируемойПокупки</enums>
+  <enums>Enum.СостоянияНапоминаний</enums>
+  <enums>Enum.ВидыДолговыхОпераций</enums>
+  <enums>Enum.БулевоДаНет</enums>
+  <enums>Enum.ВидДвиженияДС</enums>
+  <reports>Report.СальдоЗаПериод</reports>
+  <reports>Report.РасходыЗаПериод</reports>
+  <reports>Report.ОстаткиПоСчетам</reports>
+  <reports>Report.ДоходыРасходыСКД</reports>
+  <reports>Report.ДоходыЗаПериод</reports>
+  <reports>Report.ИсторияКурсовВалют</reports>
+  <reports>Report.ДвиженияПоСчету</reports>
+  <reports>Report.СостоянияДолговыхОбязательств</reports>
+  <reports>Report.ДвиженияПоДолговымОбязательствам</reports>
+  <reports>Report.ИсторияТочекАктуальности</reports>
+  <reports>Report.ИсторияРасходовПоСтатье</reports>
+  <reports>Report.АнализРасходов</reports>
+  <reports>Report.ПоказанияСчетчиков</reports>
+  <reports>Report.ДинамикаРасходовПоСтатье</reports>
+  <reports>Report.ПрогнозируемыеОстаткиДенежныхСредств</reports>
+  <dataProcessors>DataProcessor.КонсольЗапросов_82</dataProcessors>
+  <informationRegisters>InformationRegister.КурсыВалют</informationRegisters>
+  <informationRegisters>InformationRegister.ПоказанияСчётчиков</informationRegisters>
+  <informationRegisters>InformationRegister.Тарифы</informationRegisters>
+  <informationRegisters>InformationRegister.СостоянияПланируемыхПокупок</informationRegisters>
+  <informationRegisters>InformationRegister.ТочкиАктуальности</informationRegisters>
+  <informationRegisters>InformationRegister.ГрафикПлановыхДоходовРасходов</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиПоСчетам</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Доходы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Расходы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ДолговыеОбязательства</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиПланируемыхПокупок</accumulationRegisters>
+  <tasks>Task.Напоминание</tasks>
+</mdclass:Configuration>

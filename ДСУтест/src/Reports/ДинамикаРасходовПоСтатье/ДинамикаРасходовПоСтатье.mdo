@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="503d7c40-81ab-4762-b9cd-96869739df47">
+  <producedTypes>
+    <objectType typeId="bd746034-6f36-4b31-8513-53fc04b8e928" valueTypeId="98f1b796-8470-43cd-b350-a73b4efce927"/>
+    <managerType typeId="5fee1a41-4eae-4279-befd-14d7faa1ec39" valueTypeId="d42ff793-5023-4cfc-ae18-5b8a6fbaadc2"/>
+  </producedTypes>
+  <name>ДинамикаРасходовПоСтатье</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика расходов по статье</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДинамикаРасходовПоСтатье.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="8919fa4c-e389-4aeb-9182-9e6779df1f96">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7174493c-2d9b-451b-901c-a62b357a78ba">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ef1afd6b-d5bb-4b8f-a521-ad9cbc5f2d78">
+    <name>СтатьяРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиДДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+  </attributes>
+  <forms uuid="c762e852-ad42-4fc0-b0dd-748f453965fe">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="700c9288-d1ca-4c11-aa88-831f3e19b253">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

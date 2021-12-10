@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e432460-a139-47df-9d74-dbe7214d3da2">
+  <producedTypes>
+    <selectionType typeId="c0bd499a-6a8c-40f6-a1a0-bbfe61bc74ae" valueTypeId="c5a6919f-85e0-4c28-9d06-466cd89ca78c"/>
+    <listType typeId="2d11fa0b-2403-4809-91c1-7e2755253928" valueTypeId="ef901650-9aaf-435e-b65b-ce9a7c5918e6"/>
+    <managerType typeId="d38cc46c-0662-462f-9037-2a4141f549c8" valueTypeId="3bd1cafd-162f-435f-88e5-bb8308222719"/>
+    <recordSetType typeId="12b6fd26-bcc8-4c68-9582-c051794c9be9" valueTypeId="849e66df-20c4-422d-bdbd-7074cbcfa892"/>
+    <recordKeyType typeId="f9138c39-1d94-409e-a910-b4c84f0aba63" valueTypeId="fde9245a-8656-4ca4-bce1-8459d4cb0613"/>
+    <recordType typeId="19728b28-1aaf-4af2-98a2-8648fa2ac400" valueTypeId="8a11bb7e-da98-4473-bfd9-32cfe1f5e283"/>
+  </producedTypes>
+  <name>ДолговыеОбязательства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки по долговым обязательствам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="03db45b2-96d9-45a8-90be-b06bf8b63c64">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="7e0b6796-452b-475c-a937-9a05b736edf3">
+    <name>СрокИсполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок исполнения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9c06e5ad-8913-438f-ab61-2b627963227e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="3d6bbea9-14ef-4f78-bd16-09eb2018460f">
+    <name>Должник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8229382a-6128-4e9f-9935-ce5debfdd94c">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
