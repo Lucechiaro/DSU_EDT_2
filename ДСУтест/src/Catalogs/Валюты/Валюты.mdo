@@ -29,10 +29,10 @@
   <choiceMode>BothWays</choiceMode>
   <defaultChoiceForm>Catalog.Валюты.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="460a2b80-0392-4c0a-b66a-4f4b23a2876e">
-    <name>Представление</name>
+    <name>ПредставлениеВалюты</name>
     <synonym>
       <key>ru</key>
-      <value>Представление</value>
+      <value>Представление валюты</value>
     </synonym>
     <type>
       <types>String</types>
