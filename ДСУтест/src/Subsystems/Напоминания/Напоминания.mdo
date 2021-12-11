@@ -13,6 +13,5 @@
   <content>Constant.НапоминанияДнейДоСобытия</content>
   <content>Task.Напоминание</content>
   <content>Enum.СостоянияНапоминаний</content>
-  <content>DataProcessor.КонсольЗапросов_82</content>
   <content>CommonForm.НастройкиНапоминаний</content>
 </mdclass:Subsystem>

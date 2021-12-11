@@ -183,10 +183,6 @@
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
   <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
-  <handlers>
     <event>BeforeClose</event>
     <name>ПередЗакрытием</name>
   </handlers>

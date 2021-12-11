@@ -36,10 +36,6 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>0:485e30b9-e79d-48af-b284-1431b6e65165</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>CommonForm.ФормаВалютыУчета.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
