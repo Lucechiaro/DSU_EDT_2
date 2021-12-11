@@ -1,0 +1,1 @@
+"d:/Portable Software/SonarScanner/bin/sonar-scanner.bat" -D"sonar.login=685899760254597372c27240672fefbc0e2525de"
