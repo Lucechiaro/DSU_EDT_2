@@ -10,7 +10,7 @@
     </userVisible>
     <dataPath xsi:type="form:MultiLanguageDataPath">
       <paths xsi:type="form:DataPath">
-        <segments>НаборКонстант.ОсновнаяВалютаУчёта</segments>
+        <segments>НаборКонстант.ОсновнаяВалютаУчета</segments>
       </paths>
     </dataPath>
     <extendedTooltip>

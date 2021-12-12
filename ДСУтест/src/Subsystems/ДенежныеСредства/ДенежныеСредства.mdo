@@ -28,9 +28,8 @@
   <content>Catalog.Валюты</content>
   <content>485e30b9-e79d-48af-b284-1431b6e65165</content>
   <content>Report.ОстаткиПоСчетам</content>
-  <content>Report.ДоходыРасходыСКД</content>
   <content>Report.РасходыЗаПериод</content>
-  <content>Constant.ОсновнаяВалютаУчёта</content>
+  <content>Constant.ОсновнаяВалютаУчета</content>
   <content>Catalog.Счета</content>
   <content>Catalog.СтатьиДДС</content>
   <content>Report.ДоходыЗаПериод</content>

@@ -74,7 +74,7 @@
   <commonCommands>CommonCommand.СоздатьТочкуАктуальности</commonCommands>
   <commonCommands>CommonCommand.АктуализироватьКурсыВалют</commonCommands>
   <commonCommands>CommonCommand.ПодсчитатьЛиквиды</commonCommands>
-  <constants>Constant.ОсновнаяВалютаУчёта</constants>
+  <constants>Constant.ОсновнаяВалютаУчета</constants>
   <constants>Constant.СчетХраненияДСПланируемыхПокупок</constants>
   <constants>Constant.ВалютаХраненияДСПланируемыхПокупок</constants>
   <constants>Constant.НапоминанияДнейДоСобытия</constants>
@@ -113,7 +113,6 @@
   <reports>Report.СальдоЗаПериод</reports>
   <reports>Report.РасходыЗаПериод</reports>
   <reports>Report.ОстаткиПоСчетам</reports>
-  <reports>Report.ДоходыРасходыСКД</reports>
   <reports>Report.ДоходыЗаПериод</reports>
   <reports>Report.ИсторияКурсовВалют</reports>
   <reports>Report.ДвиженияПоСчету</reports>

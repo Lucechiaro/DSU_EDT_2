@@ -1,6 +1,0 @@
-projectKey=DSU_test
-serverUrl=http://localhost:9000
-serverVersion=9.1.0.47736
-dashboardUrl=http://localhost:9000/dashboard?id=DSU_test
-ceTaskId=AX2q0Ru-9ziiuZkHZmo6
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX2q0Ru-9ziiuZkHZmo6

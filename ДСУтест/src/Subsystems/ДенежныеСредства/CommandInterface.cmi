@@ -32,10 +32,6 @@
       </visible>
     </visibilityFragments>
     <visibilityFragments>
-      <command>Report.ДоходыРасходыСКД.StandardCommand.Open</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>CommonForm.ФормаВалютыУчета.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
@@ -71,12 +67,11 @@
       <commands>Report.ДоходыЗаПериод.StandardCommand.Open</commands>
       <commands>Report.ИсторияТочекАктуальности.StandardCommand.Open</commands>
       <commands>Report.ИсторияКурсовВалют.StandardCommand.Open</commands>
-      <commands>Report.ДоходыРасходыСКД.StandardCommand.Open</commands>
       <commands>0:485e30b9-e79d-48af-b284-1431b6e65165</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelTools</group>
-      <commands>Constant.ОсновнаяВалютаУчёта.StandardCommand.Open</commands>
+      <commands>Constant.ОсновнаяВалютаУчета.StandardCommand.Open</commands>
       <commands>CommonForm.ФормаВалютыУчета.StandardCommand.Open</commands>
       <commands>CommonForm.ФормаВводаКурсовВалют.StandardCommand.Open</commands>
       <commands>CommonCommand.АктуализироватьКурсыВалют</commands>

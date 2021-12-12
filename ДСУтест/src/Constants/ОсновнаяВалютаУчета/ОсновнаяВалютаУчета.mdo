@@ -5,10 +5,10 @@
     <valueManagerType typeId="eb39c525-d366-4318-aa54-1a19ea1156e5" valueTypeId="983122bd-887d-478a-b7f6-52bd7fd7d291"/>
     <valueKeyType typeId="22fd668c-55ca-5cc0-a2eb-529ecbc6cc8c" valueTypeId="c0e2279e-c237-57d0-b7a3-7a70eba1ec4e"/>
   </producedTypes>
-  <name>ОсновнаяВалютаУчёта</name>
+  <name>ОсновнаяВалютаУчета</name>
   <synonym>
     <key>ru</key>
-    <value>Основная валюта учёта</value>
+    <value>Основная валюта учета</value>
   </synonym>
   <type>
     <types>CatalogRef.Валюты</types>
