@@ -2,8 +2,8 @@
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <subsystemsOrder>
     <subsystems>Subsystem.ДенежныеСредства</subsystems>
-    <subsystems>Subsystem.ПланируемыеПокупки</subsystems>
     <subsystems>Subsystem.ДолговыеОбязательства</subsystems>
+    <subsystems>Subsystem.ПланируемыеПокупки</subsystems>
     <subsystems>Subsystem.Счетчики</subsystems>
     <subsystems>Subsystem.Напоминания</subsystems>
   </subsystemsOrder>

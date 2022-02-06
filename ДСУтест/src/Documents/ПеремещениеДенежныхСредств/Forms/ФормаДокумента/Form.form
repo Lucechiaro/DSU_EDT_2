@@ -540,10 +540,6 @@
               <segments>Объект.СуммаНазначения</segments>
             </paths>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>СуммаНазначенияПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>СуммаНазначенияРасширеннаяПодсказка</name>
             <id>72</id>

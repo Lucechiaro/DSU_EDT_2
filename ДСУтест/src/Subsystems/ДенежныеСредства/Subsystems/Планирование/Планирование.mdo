@@ -6,7 +6,6 @@
     <value>Планирование</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>true</includeInCommandInterface>
   <content>InformationRegister.ГрафикПлановыхДоходовРасходов</content>
   <content>Document.ПлановыеДоходыРасходы</content>
   <parentSubsystem>Subsystem.ДенежныеСредства</parentSubsystem>

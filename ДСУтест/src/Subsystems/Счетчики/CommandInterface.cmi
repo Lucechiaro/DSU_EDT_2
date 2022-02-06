@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
-  <commandsVisibility>
-    <visibilityFragments>
-      <command>100:5fd68b37-e18e-4ae7-8464-70a42b33dff3</command>
-      <visible/>
-    </visibilityFragments>
-  </commandsVisibility>
-</cmi:CommandInterface>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi"/>
