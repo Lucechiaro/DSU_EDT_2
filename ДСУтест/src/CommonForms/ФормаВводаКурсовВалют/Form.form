@@ -315,7 +315,7 @@
       </edit>
     </columns>
     <columns>
-      <name>Представление</name>
+      <name>ПредставлениеВалюты</name>
       <title>
         <key>ru</key>
         <value>Представление</value>
