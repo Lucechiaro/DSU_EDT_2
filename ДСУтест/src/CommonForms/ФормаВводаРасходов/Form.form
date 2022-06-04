@@ -2097,16 +2097,13 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ИдентификаторСтроки</name>
+    <name>ТекущаяСтрока</name>
     <title>
       <key>ru</key>
-      <value>Идентификатор строки</value>
+      <value>Текущая строка</value>
     </title>
-    <id>4</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
+    <id>5</id>
+    <valueType/>
     <view>
       <common>true</common>
     </view>
@@ -2115,13 +2112,15 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ТекущаяСтрока</name>
+    <name>НеПеречитыватьДанныеДокумента</name>
     <title>
       <key>ru</key>
-      <value>Текущая строка</value>
+      <value>Не перечитывать данные документа</value>
     </title>
-    <id>5</id>
-    <valueType/>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
     <view>
       <common>true</common>
     </view>
