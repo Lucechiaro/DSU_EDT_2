@@ -9,7 +9,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ПланируемыеПокупки</picture>
   </picture>
-  <content>CommonModule.КонтрольОстатков</content>
   <content>CommonModule.ОбщегоНазначения</content>
   <content>Role.Основная</content>
   <content>Enum.ВидыПериодов</content>

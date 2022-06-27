@@ -64,7 +64,6 @@
   <commonPictures>CommonPicture.Время</commonPictures>
   <sessionParameters>SessionParameter.ТочкаАктуальности</sessionParameters>
   <roles>Role.Основная</roles>
-  <commonModules>CommonModule.КонтрольОстатков</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <commonModules>CommonModule.УправлениеНапоминаниями</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>

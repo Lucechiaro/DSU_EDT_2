@@ -10,7 +10,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Деньги</picture>
   </picture>
-  <content>CommonModule.КонтрольОстатков</content>
   <content>CommonModule.ОбщегоНазначения</content>
   <content>CommonPicture.КнопкаОК</content>
   <content>CommonPicture.КнопкаОтмена</content>
