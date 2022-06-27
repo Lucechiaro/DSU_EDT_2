@@ -22,6 +22,10 @@
 					<v8:content>Документ</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаКонечныйОстаток</dataPath>
@@ -37,6 +41,17 @@
 				<dcscom:balanceGroupName>Сумма</dcscom:balanceGroupName>
 				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
 			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаНачальныйОстаток</dataPath>
@@ -52,6 +67,17 @@
 				<dcscom:balanceGroupName>Сумма</dcscom:balanceGroupName>
 				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
 			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаПриход</dataPath>
@@ -62,6 +88,17 @@
 					<v8:content>Приход</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаРасход</dataPath>
@@ -72,6 +109,17 @@
 					<v8:content>Расход</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Счет</dataPath>
@@ -110,10 +158,10 @@
 		<query>ВЫБРАТЬ
 	ОстаткиПоСчетамОстаткиИОбороты.Валюта КАК Валюта,
 	ОстаткиПоСчетамОстаткиИОбороты.Регистратор КАК Регистратор,
-	СУММА(ОстаткиПоСчетамОстаткиИОбороты.СуммаНачальныйОстаток) КАК СуммаНачальныйОстаток,
-	СУММА(ОстаткиПоСчетамОстаткиИОбороты.СуммаКонечныйОстаток) КАК СуммаКонечныйОстаток,
-	СУММА(ОстаткиПоСчетамОстаткиИОбороты.СуммаПриход) КАК СуммаПриход,
-	СУММА(ОстаткиПоСчетамОстаткиИОбороты.СуммаРасход) КАК СуммаРасход,
+	ОстаткиПоСчетамОстаткиИОбороты.СуммаНачальныйОстаток КАК СуммаНачальныйОстаток,
+	ОстаткиПоСчетамОстаткиИОбороты.СуммаКонечныйОстаток КАК СуммаКонечныйОстаток,
+	ОстаткиПоСчетамОстаткиИОбороты.СуммаПриход КАК СуммаПриход,
+	ОстаткиПоСчетамОстаткиИОбороты.СуммаРасход КАК СуммаРасход,
 	ВЫРАЗИТЬ(ОстаткиПоСчетамОстаткиИОбороты.Регистратор.Комментарий КАК СТРОКА(100)) КАК Комментарий,
 	НАЧАЛОПЕРИОДА(ОстаткиПоСчетамОстаткиИОбороты.Период, ДЕНЬ) КАК День
 {ВЫБРАТЬ
@@ -124,13 +172,8 @@
 	СуммаПриход,
 	СуммаРасход}
 ИЗ
-	РегистрНакопления.ОстаткиПоСчетам.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, , Счет = &amp;Счет) КАК ОстаткиПоСчетамОстаткиИОбороты
-
-СГРУППИРОВАТЬ ПО
-	ОстаткиПоСчетамОстаткиИОбороты.Валюта,
-	ОстаткиПоСчетамОстаткиИОбороты.Регистратор,
-	ВЫРАЗИТЬ(ОстаткиПоСчетамОстаткиИОбороты.Регистратор.Комментарий КАК СТРОКА(100)),
-	НАЧАЛОПЕРИОДА(ОстаткиПоСчетамОстаткиИОбороты.Период, ДЕНЬ)</query>
+	РегистрНакопления.ОстаткиПоСчетам.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, Движения,
+		Счет = &amp;Счет) КАК ОстаткиПоСчетамОстаткиИОбороты</query>
 	</dataSet>
 	<totalField>
 		<dataPath>СуммаКонечныйОстаток</dataPath>
@@ -256,9 +299,6 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаКонечныйОстаток</dcsset:field>
 				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ПараметрыДанных.Период</dcsset:field>
-				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -328,38 +368,18 @@
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
-						<dcsset:groupItems>
-							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Регистратор</dcsset:field>
-								<dcsset:groupType>Items</dcsset:groupType>
-								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-							</dcsset:item>
-						</dcsset:groupItems>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
 						<dcsset:selection>
 							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Регистратор</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Комментарий</dcsset:field>
+							</dcsset:item>
 						</dcsset:selection>
-						<dcsset:item xsi:type="dcsset:StructureItemGroup">
-							<dcsset:groupItems>
-								<dcsset:item xsi:type="dcsset:GroupItemField">
-									<dcsset:field>Комментарий</dcsset:field>
-									<dcsset:groupType>Items</dcsset:groupType>
-									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-								</dcsset:item>
-							</dcsset:groupItems>
-							<dcsset:order>
-								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-							</dcsset:order>
-							<dcsset:selection>
-								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-							</dcsset:selection>
-						</dcsset:item>
 					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
