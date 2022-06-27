@@ -2111,23 +2111,6 @@
       <common>true</common>
     </edit>
   </attributes>
-  <attributes>
-    <name>НеПеречитыватьДанныеДокумента</name>
-    <title>
-      <key>ru</key>
-      <value>Не перечитывать данные документа</value>
-    </title>
-    <id>11</id>
-    <valueType>
-      <types>Boolean</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
   <formCommands>
     <name>ЗаписатьДокумент</name>
     <title>
