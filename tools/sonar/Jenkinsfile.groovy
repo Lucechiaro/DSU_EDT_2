@@ -104,13 +104,13 @@ pipeline {
             }
         }
 
-        stage('Checkout') {
+        /*stage('Checkout') {
             steps {
                 script {
                     dir('Repo') {
-                        /*commonMethods.cmd("git lfs install")*/
+                        commonMethods.cmd("git lfs install")
                         checkout([$class: 'GitSCM',
-                            branches: [[name: "*/${git_repo_branch}"]],
+                            branches: [[name: "${git_repo_branch}"]],
                             browser: [$class: 'GitLab', repoUrl: git_repo_url],
                             doGenerateSubmoduleConfigurations: false,
                             extensions: [[$class: 'CheckoutOption', timeout: 60], [$class: 'GitLFSPull'], [$class: 'CleanBeforeCheckout', deleteUntrackedNestedRepositories: true], [$class: 'CloneOption', depth: 0, noTags: true, reference: '', shallow: false, timeout: 60]],
@@ -119,6 +119,7 @@ pipeline {
                 }
             }
         }
+        */
 
         stage('Sonar scanning') {
             
