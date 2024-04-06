@@ -29,7 +29,7 @@ pipeline {
                     // Инициализация параметров значениями по умолчанию
                     /*sonar_catalog = commonMethods.initParam(sonar_catalog, 'C:/Sonar/', 'sonar_catalog')*/
                     PROJECT_NAME = "DSU"
-                    SRC = "./src"
+                    SRC = "./ДСУтест/src/"
                     PROJECT_KEY = PROJECT_NAME
                     /*PROPERTIES_CATALOG = commonMethods.initParam(PROPERTIES_CATALOG, './Sonar', 'PROPERTIES_CATALOG')
 
@@ -126,7 +126,8 @@ pipeline {
                                 '-Dsonar.sourceEncoding=UTF-8',
                                 '-Dsonar.inclusions=**/*.bsl',
                                 '-Dsonar.bsl.languageserver.enabled=true',
-                                '-Dfile.encoding=UTF-8'
+                                '-Dfile.encoding=UTF-8',
+                                "-Dsonar.token="${token}""
                             ].join(' ')
 
 
