@@ -5,6 +5,7 @@ def PROJECT_NAME_EDT = ''
 def config = [
         "versionFilePath":'src/VERSION'
     ]
+def scanner_properties    
 
    
 
@@ -122,7 +123,8 @@ pipeline {
         */
 
         stage('Sonar scanning') {
-            
+                      
+
             steps {
                
                 script {
@@ -130,21 +132,22 @@ pipeline {
                     /*def configurationText = readFile(encoding: 'UTF-8', file: config.versionFilePath)
                     configurationVersion = (configurationText =~ /<VERSION>(.*)<\/VERSION>/)[0][1] 
                     scannerHome = scannerHome.replaceAll("\\s","\\ ")*/
-                }
-               
-                withSonarQubeEnv('Sonar') {
 
-                     def scanner_properties = [
-                                "-X",
+                    scanner_properties = ["-X",
                                 /*"-Dsonar.projectVersion=%SONAR_PROJECTVERSION%",*/
                                 "-Dsonar.projectKey=${PROJECT_KEY}",
                                 "-Dsonar.sources=\"${SRC}\"",
                                 /*"-Dsonar.externalIssuesReportPaths=${GENERIC_ISSUE_JSON}",*/
-                                "-Dsonar.sourceEncoding=UTF-8",
-                                "-Dsonar.inclusions=**/*.bsl",
-                                "-Dsonar.bsl.languageserver.enabled=true",
-                                "-Dfile.encoding=UTF-8"
+                                '-Dsonar.sourceEncoding=UTF-8',
+                                '-Dsonar.inclusions=**/*.bsl',
+                                '-Dsonar.bsl.languageserver.enabled=true',
+                                '-Dfile.encoding=UTF-8'
                             ].join(' ')
+
+
+                }
+
+                withSonarQubeEnv('Sonar') {
 
                     /*cmd('D:\\\"Portable Software\"\\SonarScanner\\bin\\sonar-scanner -D sonar.projectVersion=' + "${configurationVersion}")*/
                     cmd("""
