@@ -136,12 +136,7 @@ pipeline {
 
                     /*cmd('D:\\\"Portable Software\"\\SonarScanner\\bin\\sonar-scanner -D sonar.projectVersion=' + "${configurationVersion}")*/
                     cmd("@echo ${scanner_properties}")
-                    cmd("""
-                                @set SRC=\"${SRC}\"
-                                @echo %SRC%
-                                @set SONAR_SCANNER_OPTS=-Xmx6g
-                                ${scannerHome}\\bin\\sonar-scanner ${scanner_properties}
-                                """)
+                    cmd("""${scannerHome}\\bin\\sonar-scanner ${scanner_properties}""")
                 }
             }
         }
