@@ -136,7 +136,7 @@ pipeline {
 
                     /*cmd('D:\\\"Portable Software\"\\SonarScanner\\bin\\sonar-scanner -D sonar.projectVersion=' + "${configurationVersion}")*/
                     cmd("@echo ${scanner_properties}")
-                    cmd("""${scannerHome}\\bin\\sonar-scanner ${scanner_properties}""")
+                    cmd("""${scannerHome}\\bin\\sonar-scanner ${scanner_properties} """)
                 }
             }
         }
