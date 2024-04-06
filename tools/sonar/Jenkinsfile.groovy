@@ -126,8 +126,7 @@ pipeline {
                                 '-Dsonar.sourceEncoding=UTF-8',
                                 '-Dsonar.inclusions=**/*.bsl',
                                 '-Dsonar.bsl.languageserver.enabled=true',
-                                '-Dfile.encoding=UTF-8',
-                                "-Dsonar.token="${token}""
+                                '-Dfile.encoding=UTF-8'
                             ].join(' ')
 
 
