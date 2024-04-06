@@ -29,7 +29,7 @@ pipeline {
                     // Инициализация параметров значениями по умолчанию
                     /*sonar_catalog = commonMethods.initParam(sonar_catalog, 'C:/Sonar/', 'sonar_catalog')*/
                     PROJECT_NAME = "DSU"
-                    SRC = "./ДСУтест/src/"
+                    SRC = "./DSU/src/"
                     PROJECT_KEY = PROJECT_NAME
                     /*PROPERTIES_CATALOG = commonMethods.initParam(PROPERTIES_CATALOG, './Sonar', 'PROPERTIES_CATALOG')
 
