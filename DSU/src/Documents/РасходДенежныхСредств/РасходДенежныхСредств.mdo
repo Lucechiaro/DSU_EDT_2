@@ -18,6 +18,14 @@
   <basedOn>Task.Напоминание</basedOn>
   <createOnInput>Use</createOnInput>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Расход средств</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Расходы денежных средств</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <checkUnique>true</checkUnique>
@@ -29,8 +37,11 @@
   <registerRecords>AccumulationRegister.ОстаткиПланируемыхПокупок</registerRecords>
   <registerRecords>InformationRegister.СостоянияПланируемыхПокупок</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиПоСчетам</registerRecords>
+  <registerRecords>AccumulationRegister.ОстаткиВалют</registerRecords>
   <registerRecords>AccumulationRegister.ДолговыеОбязательства</registerRecords>
   <registerRecords>AccumulationRegister.Расходы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="5dbc367b-efff-4a6f-af36-b4fe9d138553">
     <name>Счет</name>
     <synonym>
@@ -213,6 +224,21 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9991b39-9332-4f14-ae46-92c31195bb49">
+    <name>БанковскаяТранзакция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковская транзакция</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.БанковскаяТранзакция</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

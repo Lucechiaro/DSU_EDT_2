@@ -11,10 +11,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Number</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Number</segments>
       </dataPath>
       <extendedTooltip>
         <name>НомерРасширеннаяПодсказка</name>
@@ -63,10 +61,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Date</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Date</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -219,10 +215,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.Счет</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.Счет</segments>
           </dataPath>
           <extendedTooltip>
             <name>СчетРасширеннаяПодсказка</name>
@@ -272,10 +266,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.Валюта</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.Валюта</segments>
           </dataPath>
           <extendedTooltip>
             <name>ВалютаРасширеннаяПодсказка</name>
@@ -325,10 +317,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.Сумма</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.Сумма</segments>
           </dataPath>
           <extendedTooltip>
             <name>СуммаРасширеннаяПодсказка</name>
@@ -429,10 +419,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.СчетНазначения</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.СчетНазначения</segments>
           </dataPath>
           <extendedTooltip>
             <name>СчетНазначенияРасширеннаяПодсказка</name>
@@ -482,10 +470,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.ВалютаНазначения</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ВалютаНазначения</segments>
           </dataPath>
           <extendedTooltip>
             <name>ВалютаНазначенияРасширеннаяПодсказка</name>
@@ -535,10 +521,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.СуммаНазначения</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.СуммаНазначения</segments>
           </dataPath>
           <extendedTooltip>
             <name>СуммаНазначенияРасширеннаяПодсказка</name>
@@ -607,10 +591,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Объект.Курс</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.Курс</segments>
               </dataPath>
               <extendedTooltip>
                 <name>КурсРасширеннаяПодсказка</name>
@@ -664,10 +646,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Объект.Кратность</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.Кратность</segments>
               </dataPath>
               <extendedTooltip>
                 <name>КратностьРасширеннаяПодсказка</name>
@@ -717,10 +697,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Объект.ИнвертироватьКурс</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.КурсДействуетДляИсходнойВалюты</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ИнвертироватьКурсРасширеннаяПодсказка</name>
@@ -1031,10 +1009,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>НаличиеКомиссии</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаличиеКомиссии</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1087,10 +1063,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>СчетКомиссии</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СчетКомиссии</segments>
           </dataPath>
           <extendedTooltip>
             <name>СчетКомиссииРасширеннаяПодсказка</name>
@@ -1143,10 +1117,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>ВалютаКомиссии</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ВалютаКомиссии</segments>
           </dataPath>
           <extendedTooltip>
             <name>ВалютаКомиссииРасширеннаяПодсказка</name>
@@ -1202,10 +1174,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>СуммаКомиссии</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СуммаКомиссии</segments>
             </dataPath>
             <extendedTooltip>
               <name>СуммаКомиссииРасширеннаяПодсказка</name>
@@ -1258,10 +1228,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>КурсКомиссии</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>КурсКомиссии</segments>
             </dataPath>
             <extendedTooltip>
               <name>КурсКомиссииРасширеннаяПодсказка</name>
@@ -1314,10 +1282,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>КратностьКомиссии</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>КратностьКомиссии</segments>
             </dataPath>
             <extendedTooltip>
               <name>КратностьКомиссииРасширеннаяПодсказка</name>
@@ -1442,10 +1408,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.ДокументКомиссии</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ДокументКомиссии</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1536,10 +1500,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.ПланируемаяПокупка</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ПланируемаяПокупка</segments>
         </dataPath>
         <extendedTooltip>
           <name>ПланируемаяПокупкаРасширеннаяПодсказка</name>
@@ -1592,10 +1554,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.СтатьяДДС</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.СтатьяДДС</segments>
         </dataPath>
         <extendedTooltip>
           <name>СтатьяДДСРасширеннаяПодсказка</name>
@@ -1647,10 +1607,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.УчитыватьВРасходах</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.УчитыватьВРасходах</segments>
           </dataPath>
           <extendedTooltip>
             <name>УчитыватьВРасходахРасширеннаяПодсказка</name>
@@ -1692,10 +1650,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.УчитыватьВДоходах</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.УчитыватьВДоходах</segments>
           </dataPath>
           <extendedTooltip>
             <name>УчитыватьВДоходахРасширеннаяПодсказка</name>
@@ -1763,6 +1719,106 @@
           <united>true</united>
           <throughAlign>Auto</throughAlign>
           <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ТранзакцияПрихода</name>
+        <id>103</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ТранзакцияПрихода</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ТранзакцияПриходаРасширеннаяПодсказка</name>
+          <id>105</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ТранзакцияПриходаКонтекстноеМеню</name>
+          <id>104</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ТранзакцияРасхода</name>
+        <id>106</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ТранзакцияРасхода</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ТранзакцияРасходаРасширеннаяПодсказка</name>
+          <id>108</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ТранзакцияРасходаКонтекстноеМеню</name>
+          <id>107</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
         </extInfo>
       </items>
       <visible>true</visible>
@@ -1841,10 +1897,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Комментарий</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Комментарий</segments>
     </dataPath>
     <extendedTooltip>
       <name>КомментарийРасширеннаяПодсказка</name>
@@ -2061,6 +2115,18 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>AccumulationRegister.ОстаткиПланируемыхПокупок.StandardCommand.OpenByRecorder</command>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>AccumulationRegister.ОстаткиВалют.StandardCommand.OpenByRecorder</command>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>AccumulationRegister.ОстаткиПоСчетам.StandardCommand.OpenByRecorder</command>
         <userVisible>
           <common>true</common>
         </userVisible>

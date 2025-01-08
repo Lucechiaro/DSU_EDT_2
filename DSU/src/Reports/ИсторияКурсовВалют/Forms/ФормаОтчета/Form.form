@@ -11,10 +11,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>НаименованиеТекущегоВарианта</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НаименованиеТекущегоВарианта</segments>
       </dataPath>
       <titleLocation>Left</titleLocation>
       <extendedTooltip>
@@ -163,14 +161,12 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Отчет.НачалоПериода</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Отчет.НачалоПериода</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
-        <name>ПриИзмененииПараметраОтбора</name>
+        <name>НачалоПериодаПриИзменении</name>
       </handlers>
       <extendedTooltip>
         <name>НачалоПериодаРасширеннаяПодсказка</name>
@@ -219,14 +215,12 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Отчет.КонецПериода</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Отчет.КонецПериода</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
-        <name>ПриИзмененииПараметраОтбора</name>
+        <name>КонецПериодаПриИзменении</name>
       </handlers>
       <extendedTooltip>
         <name>КонецПериодаРасширеннаяПодсказка</name>
@@ -275,14 +269,12 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Отчет.Валюта</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Отчет.Валюта</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
-        <name>ПриИзмененииПараметраОтбора</name>
+        <name>ВалютаПриИзменении</name>
       </handlers>
       <extendedTooltip>
         <name>ВалютаРасширеннаяПодсказка</name>
@@ -315,10 +307,6 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <handlers>
-          <event>StartChoice</event>
-          <name>ВалютаНачалоВыбора</name>
-        </handlers>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
@@ -420,6 +408,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
+      <source>ТаблицаПараметров</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -458,6 +447,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
+      <source>ТаблицаПараметров</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -496,6 +486,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
+      <source>ТаблицаПараметров</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -558,10 +549,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Результат</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Результат</segments>
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>
@@ -623,6 +612,10 @@
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <excludedCommands>ReportSettings</excludedCommands>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

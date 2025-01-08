@@ -11,10 +11,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>НаименованиеТекущегоВарианта</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НаименованиеТекущегоВарианта</segments>
       </dataPath>
       <titleLocation>Left</titleLocation>
       <extendedTooltip>
@@ -133,10 +131,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Должник</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Должник</segments>
         </dataPath>
         <extendedTooltip>
           <name>ДолжникРасширеннаяПодсказка</name>
@@ -185,10 +181,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Валюта</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Валюта</segments>
         </dataPath>
         <extendedTooltip>
           <name>ВалютаРасширеннаяПодсказка</name>
@@ -276,10 +270,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>НачалоПериода</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НачалоПериода</segments>
         </dataPath>
         <extendedTooltip>
           <name>НачалоПериодаРасширеннаяПодсказка</name>
@@ -328,10 +320,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>КонецПериода</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КонецПериода</segments>
         </dataPath>
         <extendedTooltip>
           <name>КонецПериодаРасширеннаяПодсказка</name>
@@ -454,10 +444,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Результат</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Результат</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <extendedTooltip>

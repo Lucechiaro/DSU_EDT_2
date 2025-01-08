@@ -9,5 +9,6 @@
   <content>Catalog.Валюты</content>
   <content>Catalog.Счета</content>
   <content>Catalog.СтатьиДДС</content>
+  <content>Catalog.ШаблоныРазбораБанковскойВыписки</content>
   <parentSubsystem>Subsystem.ДенежныеСредства</parentSubsystem>
 </mdclass:Subsystem>

@@ -12,10 +12,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Дата</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Дата</segments>
     </dataPath>
     <handlers>
       <event>OnChange</event>
@@ -137,10 +135,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ДеревоПоказателей.Заголовок</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ДеревоПоказателей.Заголовок</segments>
       </dataPath>
       <skipOnInput>true</skipOnInput>
       <extendedTooltip>
@@ -193,10 +189,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ДеревоПоказателей.ТекущееПоказание</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ДеревоПоказателей.ТекущееПоказание</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -249,10 +243,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ДеревоПоказателей.Прирост</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ДеревоПоказателей.Прирост</segments>
       </dataPath>
       <skipOnInput>true</skipOnInput>
       <extendedTooltip>
@@ -311,10 +303,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ДеревоПоказателей.ПредыдущееПоказание</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ДеревоПоказателей.ПредыдущееПоказание</segments>
         </dataPath>
         <skipOnInput>true</skipOnInput>
         <extendedTooltip>
@@ -370,10 +360,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ДеревоПоказателей.ДатаПредыдущегоПоказания</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ДеревоПоказателей.ДатаПредыдущегоПоказания</segments>
         </dataPath>
         <skipOnInput>true</skipOnInput>
         <extendedTooltip>
@@ -460,10 +448,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ДеревоПоказателей.Отступ</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ДеревоПоказателей.Отступ</segments>
       </dataPath>
       <skipOnInput>true</skipOnInput>
       <titleLocation>None</titleLocation>
@@ -555,6 +541,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
+      <source>ДеревоПоказателей</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -593,6 +580,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
+      <source>ДеревоПоказателей</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -631,6 +619,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
+      <source>ДеревоПоказателей</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>

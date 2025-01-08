@@ -15,10 +15,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>НачалоПериода</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НачалоПериода</segments>
       </dataPath>
       <extendedTooltip>
         <name>НачалоПериодаРасширеннаяПодсказка</name>
@@ -67,10 +65,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>КонецПериода</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>КонецПериода</segments>
       </dataPath>
       <extendedTooltip>
         <name>КонецПериодаРасширеннаяПодсказка</name>
@@ -119,10 +115,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СтатьяДДС</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СтатьяДДС</segments>
       </dataPath>
       <extendedTooltip>
         <name>СтатьяДДСРасширеннаяПодсказка</name>
@@ -212,10 +206,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>НаименованиеТекущегоВарианта</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НаименованиеТекущегоВарианта</segments>
       </dataPath>
       <titleLocation>Left</titleLocation>
       <extendedTooltip>
@@ -362,10 +354,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Результат</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Результат</segments>
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>

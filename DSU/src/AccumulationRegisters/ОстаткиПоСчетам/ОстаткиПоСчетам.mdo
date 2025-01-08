@@ -13,6 +13,7 @@
     <key>ru</key>
     <value>Остатки по счетам</value>
   </synonym>
+  <useStandardCommands>true</useStandardCommands>
   <resources uuid="0d2398ff-313e-4d57-a27e-8fb10d3a0663">
     <name>Сумма</name>
     <synonym>

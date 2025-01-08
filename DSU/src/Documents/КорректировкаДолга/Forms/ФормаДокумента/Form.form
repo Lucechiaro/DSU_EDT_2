@@ -11,10 +11,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Number</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Number</segments>
       </dataPath>
       <extendedTooltip>
         <name>НомерРасширеннаяПодсказка</name>
@@ -63,10 +61,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Date</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Date</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -209,10 +205,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.ВидОперации</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ВидОперации</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -269,10 +263,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.СрокИсполнения</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СрокИсполнения</segments>
       </dataPath>
       <extendedTooltip>
         <name>СрокИсполненияРасширеннаяПодсказка</name>
@@ -357,10 +349,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.ДолжникСписания</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ДолжникСписания</segments>
       </dataPath>
       <extendedTooltip>
         <name>ДолжникСписанияРасширеннаяПодсказка</name>
@@ -413,10 +403,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.СуммаСписания</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.СуммаСписания</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -480,10 +468,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.ВалютаСписания</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ВалютаСписания</segments>
         </dataPath>
         <extendedTooltip>
           <name>ВалютаСписанияРасширеннаяПодсказка</name>
@@ -611,10 +597,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.ДолжникУвеличения</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ДолжникУвеличения</segments>
       </dataPath>
       <extendedTooltip>
         <name>ДолжникУвеличенияРасширеннаяПодсказка</name>
@@ -667,10 +651,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.СуммаУвеличения</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.СуммаУвеличения</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -734,10 +716,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.ВалютаУвеличения</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ВалютаУвеличения</segments>
         </dataPath>
         <extendedTooltip>
           <name>ВалютаУвеличенияРасширеннаяПодсказка</name>
@@ -826,10 +806,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.Курс</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.Курс</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -883,10 +861,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.Кратность</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.Кратность</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -940,10 +916,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.ИнвертироватьКурс</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ИнвертироватьКурс</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1061,10 +1035,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Комментарий</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Комментарий</segments>
     </dataPath>
     <extendedTooltip>
       <name>КомментарийРасширеннаяПодсказка</name>

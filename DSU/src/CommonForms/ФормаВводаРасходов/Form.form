@@ -114,7 +114,7 @@
     </dataPath>
     <titleLocation>None</titleLocation>
     <excludedCommands>Change</excludedCommands>
-    <excludedCommands>Choose</excludedCommands>
+    <excludedCommands>ChangeHistory</excludedCommands>
     <excludedCommands>Copy</excludedCommands>
     <excludedCommands>Create</excludedCommands>
     <excludedCommands>Delete</excludedCommands>
@@ -130,10 +130,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.Date</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.Date</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовДатаРасширеннаяПодсказка</name>
@@ -184,10 +182,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.ДеньНедели</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.ДеньНедели</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовДеньНеделиРасширеннаяПодсказка</name>
@@ -233,10 +229,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.Number</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.Number</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовНомерРасширеннаяПодсказка</name>
@@ -281,10 +275,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.Счет</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.Счет</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовСчетРасширеннаяПодсказка</name>
@@ -329,10 +321,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.СтатьяДДС</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.СтатьяДДС</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовСтатьяДДСРасширеннаяПодсказка</name>
@@ -377,10 +367,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.Валюта</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.Валюта</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовВалютаРасширеннаяПодсказка</name>
@@ -427,10 +415,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.Сумма</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.Сумма</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовСуммаРасширеннаяПодсказка</name>
@@ -477,10 +463,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>СписокДокументов.Комментарий</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокДокументов.Комментарий</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДокументовКомментарийРасширеннаяПодсказка</name>
@@ -564,6 +548,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
+      <source>СписокДокументов</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -602,6 +587,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
+      <source>СписокДокументов</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -640,6 +626,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
+      <source>СписокДокументов</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -1000,10 +987,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Документ.Date</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Документ.Date</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1157,10 +1142,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.Счет</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.Счет</segments>
           </dataPath>
           <handlers>
             <event>OnChange</event>
@@ -1214,10 +1197,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.СтатьяДДС</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.СтатьяДДС</segments>
           </dataPath>
           <handlers>
             <event>OnChange</event>
@@ -1270,10 +1251,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.Сумма</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.Сумма</segments>
           </dataPath>
           <handlers>
             <event>OnChange</event>
@@ -1339,10 +1318,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Документ.Валюта</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Документ.Валюта</segments>
             </dataPath>
             <handlers>
               <event>OnChange</event>
@@ -1397,10 +1374,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Документ.Курс</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Документ.Курс</segments>
             </dataPath>
             <handlers>
               <event>OnChange</event>
@@ -1454,10 +1429,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Документ.Кратность</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Документ.Кратность</segments>
             </dataPath>
             <handlers>
               <event>OnChange</event>
@@ -1584,10 +1557,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.ПланируемаяПокупка</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.ПланируемаяПокупка</segments>
           </dataPath>
           <handlers>
             <event>OnChange</event>
@@ -1640,10 +1611,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.Должник</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.Должник</segments>
           </dataPath>
           <handlers>
             <event>OnChange</event>
@@ -1696,10 +1665,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.НеУчитыватьВСтруктуреРасходов</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.НеУчитыватьВСтруктуреРасходов</segments>
           </dataPath>
           <extendedTooltip>
             <name>НеУчитыватьВСтруктуреРасходовРасширеннаяПодсказка</name>
@@ -1741,10 +1708,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Документ.ИсключитьИзПланирования</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Документ.ИсключитьИзПланирования</segments>
           </dataPath>
           <extendedTooltip>
             <name>ИсключитьИзПланированияРасширеннаяПодсказка</name>
@@ -1855,10 +1820,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Документ.Комментарий</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Документ.Комментарий</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -2104,6 +2067,23 @@
     </title>
     <id>5</id>
     <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НеПеречитыватьДанныеДокумента</name>
+    <title>
+      <key>ru</key>
+      <value>Не перечитывать данные документа</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
     <view>
       <common>true</common>
     </view>

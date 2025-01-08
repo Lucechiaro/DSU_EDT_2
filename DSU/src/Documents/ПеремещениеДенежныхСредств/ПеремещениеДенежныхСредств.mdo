@@ -17,6 +17,14 @@
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Перемещение средств</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Перемещения средств</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <checkUnique>true</checkUnique>
@@ -27,8 +35,11 @@
   <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
   <registerRecords>AccumulationRegister.ОстаткиПланируемыхПокупок</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиПоСчетам</registerRecords>
+  <registerRecords>AccumulationRegister.ОстаткиВалют</registerRecords>
   <registerRecords>AccumulationRegister.Расходы</registerRecords>
   <registerRecords>AccumulationRegister.Доходы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="bf0cbcf0-b89f-4d8c-83f6-fe632cf1f2db">
     <name>Счет</name>
     <synonym>
@@ -120,7 +131,9 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтатьиДДС.Перемещение</value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -232,18 +245,14 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="800c086b-aa24-4182-9d98-cad38c018c58">
-    <name>ИнвертироватьКурс</name>
+    <name>КурсДействуетДляИсходнойВалюты</name>
     <synonym>
       <key>ru</key>
-      <value>Инвертировать курс</value>
+      <value>Курс действует для исходной валюты</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если нужно, чтобы курс и кратность относились не к исходной валюте, а к валюте назначения, нужно выставить этот флажок</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -291,6 +300,48 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a716daef-775b-427b-8f60-6c9c8e6176c5">
+    <name>ТранзакцияПрихода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзакция прихода</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.БанковскаяТранзакция</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидДвижения</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидДвиженияДС.EnumValue.Доход</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a7050e7-ee93-490a-b338-88818bf98fdc">
+    <name>ТранзакцияРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзакция расхода</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.БанковскаяТранзакция</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидДвижения</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидДвиженияДС.EnumValue.Расход</value>
+      </value>
+    </choiceParameters>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

@@ -51,6 +51,13 @@
         <value>000000001</value>
       </code>
     </items>
+    <items id="30b403b3-0324-4581-abbf-eab40da26eab">
+      <name>Перемещение</name>
+      <description>Перемещение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
   </predefined>
   <defaultObjectForm>Catalog.СтатьиДДС.Form.ФормаЭлемента</defaultObjectForm>
   <defaultFolderForm>Catalog.СтатьиДДС.Form.ФормаЭлемента</defaultFolderForm>

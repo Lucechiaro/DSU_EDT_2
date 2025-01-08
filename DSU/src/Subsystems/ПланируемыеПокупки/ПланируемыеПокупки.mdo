@@ -10,7 +10,6 @@
     <picture>CommonPicture.ПланируемыеПокупки</picture>
   </picture>
   <content>CommonModule.ОбщегоНазначения</content>
-  <content>Role.Основная</content>
   <content>Enum.ВидыПериодов</content>
   <content>Enum.СостоянияПланируемойПокупки</content>
   <content>Constant.ВалютаХраненияДСПланируемыхПокупок</content>

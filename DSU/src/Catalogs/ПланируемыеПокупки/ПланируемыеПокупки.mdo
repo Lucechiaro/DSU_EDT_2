@@ -72,4 +72,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <commands uuid="8e462375-d3cb-4ad4-93b9-c6ff3738a212">
+    <name>СоздатьПланируемуюПокупку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создать планируемую покупку</value>
+    </synonym>
+    <group>ActionsPanelCreate</group>
+    <commandParameterType/>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Создаем новый элемент справочника &quot;Планируемые покупки&quot;</value>
+    </toolTip>
+  </commands>
 </mdclass:Catalog>

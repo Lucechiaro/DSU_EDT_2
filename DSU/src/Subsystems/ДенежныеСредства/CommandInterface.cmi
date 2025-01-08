@@ -73,7 +73,6 @@
       <group>ActionsPanelTools</group>
       <commands>Constant.ОсновнаяВалютаУчета.StandardCommand.Open</commands>
       <commands>CommonForm.ФормаВалютыУчета.StandardCommand.Open</commands>
-      <commands>CommonForm.ФормаВводаКурсовВалют.StandardCommand.Open</commands>
       <commands>CommonCommand.АктуализироватьКурсыВалют</commands>
       <commands>CommonCommand.СоздатьТочкуАктуальности</commands>
     </orderFragments>

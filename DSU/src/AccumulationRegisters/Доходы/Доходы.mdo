@@ -102,21 +102,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
-  <dimensions uuid="2f226137-6a4d-4c0f-8d21-e63e77f10061">
-    <name>УдалитьСчет</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить счет</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Счета</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
   <dimensions uuid="aaba52a8-36fd-4579-be5b-025a9b4d4651">
     <name>СтатьяДДС</name>
     <synonym>

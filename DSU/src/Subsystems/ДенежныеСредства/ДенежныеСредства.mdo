@@ -14,7 +14,6 @@
   <content>CommonPicture.КнопкаОК</content>
   <content>CommonPicture.КнопкаОтмена</content>
   <content>CommonPicture.Добавить</content>
-  <content>60d1ab35-736e-4cf1-a270-7b510e9bdf01</content>
   <content>CommonPicture.ОбщаяКартинка1</content>
   <content>CommonPicture.Сформировать</content>
   <content>Document.РасходДенежныхСредств</content>
@@ -25,7 +24,6 @@
   <content>AccumulationRegister.Расходы</content>
   <content>CommonPicture.Деньги</content>
   <content>Catalog.Валюты</content>
-  <content>485e30b9-e79d-48af-b284-1431b6e65165</content>
   <content>Report.ОстаткиПоСчетам</content>
   <content>Report.РасходыЗаПериод</content>
   <content>Constant.ОсновнаяВалютаУчета</content>
@@ -36,13 +34,19 @@
   <content>InformationRegister.КурсыВалют</content>
   <content>CommonForm.ФормаВалютыУчета</content>
   <content>InformationRegister.ТочкиАктуальности</content>
-  <content>CommonForm.ФормаВводаКурсовВалют</content>
   <content>CommonForm.ФормаВводаРасходов</content>
   <content>CommonCommand.СоздатьТочкуАктуальности</content>
   <content>CommonCommand.АктуализироватьКурсыВалют</content>
   <content>Report.СальдоЗаПериод</content>
   <content>Report.ИсторияТочекАктуальности</content>
   <content>CommonCommand.ПодсчитатьЛиквиды</content>
+  <content>CommonForm.ЗагрузкаВыпискиБанка</content>
+  <content>CommonCommand.ЗагрузитьВыпискуБанка</content>
+  <content>Document.БанковскаяТранзакция</content>
+  <content>CommonForm.ВводДвиженийПоСчету</content>
+  <content>CommonCommand.ВводДвиженийПоСчету</content>
+  <content>AccumulationRegister.ОстаткиВалют</content>
+  <content>Role.Основная</content>
   <subsystems>Справочники</subsystems>
   <subsystems>Документы</subsystems>
   <subsystems>Отчеты</subsystems>

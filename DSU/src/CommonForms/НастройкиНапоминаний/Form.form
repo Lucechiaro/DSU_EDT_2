@@ -8,10 +8,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>НаборКонстант.НапоминанияДнейДоСобытия</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>НаборКонстант.НапоминанияДнейДоСобытия</segments>
     </dataPath>
     <extendedTooltip>
       <name>НапоминанияДнейДоСобытияРасширеннаяПодсказка</name>

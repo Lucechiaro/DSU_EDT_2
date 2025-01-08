@@ -15,10 +15,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Отчет.ДатаОтчета</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Отчет.ДатаОтчета</segments>
       </dataPath>
       <extendedTooltip>
         <name>ДатаОтчетаРасширеннаяПодсказка</name>
@@ -67,10 +65,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Отчет.КоличествоМесяцев</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Отчет.КоличествоМесяцев</segments>
       </dataPath>
       <extendedTooltip>
         <name>КоличествоМесяцевРасширеннаяПодсказка</name>
@@ -119,10 +115,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Отчет.СтатьяДДС</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Отчет.СтатьяДДС</segments>
       </dataPath>
       <extendedTooltip>
         <name>СтатьяДДСРасширеннаяПодсказка</name>
@@ -244,10 +238,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Результат</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Результат</segments>
     </dataPath>
     <defaultItem>true</defaultItem>
     <titleLocation>None</titleLocation>

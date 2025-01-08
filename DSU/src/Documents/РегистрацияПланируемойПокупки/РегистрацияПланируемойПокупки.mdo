@@ -10,13 +10,21 @@
   <name>РегистрацияПланируемойПокупки</name>
   <synonym>
     <key>ru</key>
-    <value>Хочу хотелку!</value>
+    <value>Планирование покупки</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.РегистрацияПланируемойПокупки.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Планирование покупки</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Планирования покупок</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>

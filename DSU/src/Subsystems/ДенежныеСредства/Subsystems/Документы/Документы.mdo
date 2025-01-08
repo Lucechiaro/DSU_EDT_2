@@ -9,5 +9,6 @@
   <content>Document.РасходДенежныхСредств</content>
   <content>Document.ПриходДенежныхСредств</content>
   <content>Document.ПеремещениеДенежныхСредств</content>
+  <content>Document.БанковскаяТранзакция</content>
   <parentSubsystem>Subsystem.ДенежныеСредства</parentSubsystem>
 </mdclass:Subsystem>

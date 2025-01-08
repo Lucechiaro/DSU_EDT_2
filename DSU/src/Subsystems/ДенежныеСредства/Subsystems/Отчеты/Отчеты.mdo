@@ -16,5 +16,6 @@
   <content>Report.АнализРасходов</content>
   <content>Report.СальдоЗаПериод</content>
   <content>Report.ПрогнозируемыеОстаткиДенежныхСредств</content>
+  <content>Report.ОстаткиВалют</content>
   <parentSubsystem>Subsystem.ДенежныеСредства</parentSubsystem>
 </mdclass:Subsystem>

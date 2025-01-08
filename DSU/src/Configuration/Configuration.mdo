@@ -36,7 +36,6 @@
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
   <compatibilityMode>8.3.18</compatibilityMode>
   <languages uuid="96f7829f-7ba4-44a4-acc9-a0549f4f759c">
     <name>Русский</name>
@@ -65,24 +64,28 @@
   <sessionParameters>SessionParameter.ТочкаАктуальности</sessionParameters>
   <roles>Role.Основная</roles>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
-  <commonModules>CommonModule.УправлениеНапоминаниями</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияВызовСервера</commonModules>
-  <commonModules>CommonModule.Глобальный</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияКлиент</commonModules>
-  <commonModules>CommonModule.ОбщегоНазначенияСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияПовтИсп</commonModules>
+  <commonModules>CommonModule.УправлениеНапоминаниями</commonModules>
+  <definedTypes>DefinedType.ИдентификаторКорреспондента</definedTypes>
   <commonCommands>CommonCommand.СоздатьТочкуАктуальности</commonCommands>
   <commonCommands>CommonCommand.АктуализироватьКурсыВалют</commonCommands>
   <commonCommands>CommonCommand.ПодсчитатьЛиквиды</commonCommands>
+  <commonCommands>CommonCommand.ЗагрузитьВыпискуБанка</commonCommands>
+  <commonCommands>CommonCommand.ВводДвиженийПоСчету</commonCommands>
   <constants>Constant.ОсновнаяВалютаУчета</constants>
   <constants>Constant.СчетХраненияДСПланируемыхПокупок</constants>
   <constants>Constant.ВалютаХраненияДСПланируемыхПокупок</constants>
   <constants>Constant.НапоминанияДнейДоСобытия</constants>
-  <commonForms>CommonForm.ФормаВалютыУчета</commonForms>
-  <commonForms>CommonForm.НастройкиПланируемыхПокупок</commonForms>
-  <commonForms>CommonForm.НастройкиНапоминаний</commonForms>
-  <commonForms>CommonForm.ФормаВводаКурсовВалют</commonForms>
-  <commonForms>CommonForm.ФормаВводаРасходов</commonForms>
+  <commonForms>CommonForm.ВводДвиженийПоСчету</commonForms>
   <commonForms>CommonForm.ВводПоказателейСчетчиков</commonForms>
+  <commonForms>CommonForm.ЗагрузкаВыпискиБанка</commonForms>
+  <commonForms>CommonForm.НастройкиНапоминаний</commonForms>
+  <commonForms>CommonForm.НастройкиПланируемыхПокупок</commonForms>
+  <commonForms>CommonForm.ФормаВалютыУчета</commonForms>
+  <commonForms>CommonForm.ФормаВводаРасходов</commonForms>
   <commonForms>CommonForm.ФормаВыбораДаты</commonForms>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.Счета</catalogs>
@@ -91,6 +94,7 @@
   <catalogs>Catalog.ПланируемыеПокупки</catalogs>
   <catalogs>Catalog.НастройкиНапоминаний</catalogs>
   <catalogs>Catalog.Должники</catalogs>
+  <catalogs>Catalog.ШаблоныРазбораБанковскойВыписки</catalogs>
   <documents>Document.РасходДенежныхСредств</documents>
   <documents>Document.ПриходДенежныхСредств</documents>
   <documents>Document.ПеремещениеДенежныхСредств</documents>
@@ -98,6 +102,7 @@
   <documents>Document.ИзменениеПланируемойПокупки</documents>
   <documents>Document.КорректировкаДолга</documents>
   <documents>Document.ПлановыеДоходыРасходы</documents>
+  <documents>Document.БанковскаяТранзакция</documents>
   <documentJournals>DocumentJournal.РасходыПоДолговымОбязательствам</documentJournals>
   <documentJournals>DocumentJournal.ПриходыПоДолговымОбязательствам</documentJournals>
   <documentJournals>DocumentJournal.ОбщийЖурналДолговыхДокументов</documentJournals>
@@ -109,6 +114,7 @@
   <enums>Enum.ВидыДолговыхОпераций</enums>
   <enums>Enum.БулевоДаНет</enums>
   <enums>Enum.ВидДвиженияДС</enums>
+  <enums>Enum.ФорматыВыписки</enums>
   <reports>Report.СальдоЗаПериод</reports>
   <reports>Report.РасходыЗаПериод</reports>
   <reports>Report.ОстаткиПоСчетам</reports>
@@ -123,6 +129,7 @@
   <reports>Report.ПоказанияСчетчиков</reports>
   <reports>Report.ДинамикаРасходовПоСтатье</reports>
   <reports>Report.ПрогнозируемыеОстаткиДенежныхСредств</reports>
+  <reports>Report.ОстаткиВалют</reports>
   <informationRegisters>InformationRegister.КурсыВалют</informationRegisters>
   <informationRegisters>InformationRegister.ПоказанияСчётчиков</informationRegisters>
   <informationRegisters>InformationRegister.Тарифы</informationRegisters>
@@ -134,5 +141,6 @@
   <accumulationRegisters>AccumulationRegister.Расходы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ДолговыеОбязательства</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиПланируемыхПокупок</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиВалют</accumulationRegisters>
   <tasks>Task.Напоминание</tasks>
 </mdclass:Configuration>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47c5dc04-b6ca-432a-b062-5bd755c72ab1">
+  <producedTypes>
+    <objectType typeId="653b878b-cf2f-4745-9354-b7cd0dcc1b24" valueTypeId="8dce3a0a-fd95-4e14-b21e-e62378183c4d"/>
+    <managerType typeId="42fed81a-6f33-47fd-a468-1826a801d38f" valueTypeId="05bd3049-0d0d-4003-850e-5dbb917025bd"/>
+  </producedTypes>
+  <name>ОстаткиВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки валют</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОстаткиВалют.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Остатки валют</value>
+  </extendedPresentation>
+  <templates uuid="1dcb519c-7615-4379-a28d-3d89325af5a6">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>ru</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

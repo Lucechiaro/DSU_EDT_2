@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea957042-854d-420e-b1c6-5b67ac65254c">
+  <producedTypes>
+    <refType typeId="076a4189-4df4-460b-b444-77295288cc1e" valueTypeId="81e9c0e7-c115-44a7-9b7e-47ef150a9c75"/>
+    <listType typeId="1b69af14-7f7e-4f95-94cf-19e40f1569ce" valueTypeId="90392cc8-77ca-491a-9699-7412e8e52bee"/>
+    <managerType typeId="81c37bcc-4574-46ec-b36e-ddd31bd73254" valueTypeId="e6f46508-afde-4e23-b914-89f0de34a610"/>
+  </producedTypes>
+  <name>ФорматыВыписки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форматы выписки</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d965b397-9237-4827-98da-8ac245721799">
+    <name>Тинькофф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тинькофф</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -43,9 +43,23 @@
 		</columnsItem>
 	</columns>
 	<rowsItem>
+		<index>0</index>
+		<indexTo>18</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
 		<index>19</index>
 		<row>
 			<formatIndex>6</formatIndex>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<indexTo>28</indexTo>
+		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
@@ -158,7 +172,7 @@
 		<endColumnOffset>117</endColumnOffset>
 		<autoSize>false</autoSize>
 		<pictureSize>Stretch</pictureSize>
-		<zOrder>0</zOrder>
+		<zOrder>1</zOrder>
 		<object xmlns:d3p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d3p1:Chart">
 			<d3p1:seriesCurId>4</d3p1:seriesCurId>
 			<d3p1:pointsCurId>0</d3p1:pointsCurId>
@@ -341,6 +355,18 @@
 			<d3p1:multiStageLinkColor>#000000</d3p1:multiStageLinkColor>
 			<d3p1:valuesAxis/>
 			<d3p1:pointsAxis/>
+			<d3p1:valuesScale>
+				<d3p1:titleArea>
+					<d3p1:font kind="AutoFont"/>
+					<d3p1:textColor>auto</d3p1:textColor>
+					<d3p1:backColor>auto</d3p1:backColor>
+					<d3p1:border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+					</d3p1:border>
+					<d3p1:borderColor>auto</d3p1:borderColor>
+				</d3p1:titleArea>
+				<d3p1:gridLinesShowMode>Show</d3p1:gridLinesShowMode>
+			</d3p1:valuesScale>
 			<d3p1:legendPlacement>UseCoordinates</d3p1:legendPlacement>
 			<d3p1:plotAreaPlacement>UseCoordinates</d3p1:plotAreaPlacement>
 			<d3p1:titleAreaPlacement>UseCoordinates</d3p1:titleAreaPlacement>
