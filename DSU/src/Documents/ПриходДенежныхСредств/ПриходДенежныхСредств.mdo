@@ -19,8 +19,12 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Приход средств</value>
+    <value>Приход</value>
   </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Список приходов</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>6</numberLength>
   <checkUnique>true</checkUnique>
