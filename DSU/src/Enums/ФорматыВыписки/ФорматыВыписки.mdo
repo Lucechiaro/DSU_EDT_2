@@ -35,4 +35,11 @@
       <value>Тинькофф</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="8ad42707-82b9-409c-94fa-6a6b69729f42">
+    <name>Сбербанк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сбербанк</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
