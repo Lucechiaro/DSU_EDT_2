@@ -1769,6 +1769,12 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+          <choiceParameterLinks>
+            <name>Отбор.Счет</name>
+            <datapath xsi:type="form:DataPath">
+              <segments>Объект.СчетНазначения</segments>
+            </datapath>
+          </choiceParameterLinks>
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
@@ -1819,6 +1825,12 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+          <choiceParameterLinks>
+            <name>Отбор.Счет</name>
+            <datapath xsi:type="form:DataPath">
+              <segments>Объект.Счет</segments>
+            </datapath>
+          </choiceParameterLinks>
         </extInfo>
       </items>
       <visible>true</visible>
