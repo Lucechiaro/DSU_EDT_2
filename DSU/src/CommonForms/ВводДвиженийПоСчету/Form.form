@@ -1531,6 +1531,7 @@
     <use>
       <common>true</common>
     </use>
+    <shortcut>Ctrl+S</shortcut>
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.SaveFile</picture>
     </picture>
