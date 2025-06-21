@@ -3,13 +3,13 @@
   <name>Счетчики</name>
   <synonym>
     <key>ru</key>
-    <value>Счетчики</value>
+    <value>Счётчики</value>
   </synonym>
   <includeInCommandInterface>true</includeInCommandInterface>
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Счетчики</picture>
   </picture>
-  <content>InformationRegister.ПоказанияСчётчиков</content>
+  <content>InformationRegister.ПоказанияСчетчиков</content>
   <content>InformationRegister.Тарифы</content>
   <content>Catalog.Счетчики</content>
   <content>CommonForm.ВводПоказателейСчетчиков</content>

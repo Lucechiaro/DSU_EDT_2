@@ -9,13 +9,13 @@
     <recordType typeId="34718459-87ef-456b-8dc3-85d2ef3d9c95" valueTypeId="ad466f2f-a6f4-483f-9010-30d0966469ce"/>
     <recordManagerType typeId="774d6b45-25ae-4818-a6bb-3e6160c7c373" valueTypeId="c58263c9-2921-4f68-9e24-2515d0896a2f"/>
   </producedTypes>
-  <name>ПоказанияСчётчиков</name>
+  <name>ПоказанияСчетчиков</name>
   <synonym>
     <key>ru</key>
-    <value>Показания счётчиков</value>
+    <value>Показания счетчиков</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <defaultListForm>InformationRegister.ПоказанияСчётчиков.Form.ФормаСписка</defaultListForm>
+  <defaultListForm>InformationRegister.ПоказанияСчетчиков.Form.ФормаСписка</defaultListForm>
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
   <mainFilterOnPeriod>true</mainFilterOnPeriod>
   <resources uuid="8110d2c5-4144-41c8-a5c6-b2426d5b3ce1">
@@ -39,10 +39,10 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="161a27e3-5c4a-4b73-8995-a978071b0565">
-    <name>Счётчик</name>
+    <name>Счетчик</name>
     <synonym>
       <key>ru</key>
-      <value>Счётчик</value>
+      <value>Счетчик</value>
     </synonym>
     <type>
       <types>CatalogRef.Счетчики</types>

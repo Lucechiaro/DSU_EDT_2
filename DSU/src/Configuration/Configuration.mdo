@@ -131,7 +131,7 @@
   <reports>Report.ПрогнозируемыеОстаткиДенежныхСредств</reports>
   <reports>Report.ОстаткиВалют</reports>
   <informationRegisters>InformationRegister.КурсыВалют</informationRegisters>
-  <informationRegisters>InformationRegister.ПоказанияСчётчиков</informationRegisters>
+  <informationRegisters>InformationRegister.ПоказанияСчетчиков</informationRegisters>
   <informationRegisters>InformationRegister.Тарифы</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияПланируемыхПокупок</informationRegisters>
   <informationRegisters>InformationRegister.ТочкиАктуальности</informationRegisters>
