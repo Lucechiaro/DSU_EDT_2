@@ -67,7 +67,6 @@
       <commands>Report.ДоходыЗаПериод.StandardCommand.Open</commands>
       <commands>Report.ИсторияТочекАктуальности.StandardCommand.Open</commands>
       <commands>Report.ИсторияКурсовВалют.StandardCommand.Open</commands>
-      <commands>0:485e30b9-e79d-48af-b284-1431b6e65165</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelTools</group>
