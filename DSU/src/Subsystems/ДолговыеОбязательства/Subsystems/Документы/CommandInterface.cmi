@@ -9,10 +9,6 @@
       <command>Document.РасходДенежныхСредств.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
-    <visibilityFragments>
-      <command>0:ac078283-b794-4f44-80fd-d85bdf454d55</command>
-      <visible/>
-    </visibilityFragments>
   </commandsVisibility>
   <commandsOrder>
     <orderFragments>
@@ -23,7 +19,6 @@
       <commands>Document.РасходДенежныхСредств.StandardCommand.OpenList</commands>
       <commands>DocumentJournal.РасходыПоДолговымОбязательствам.StandardCommand.OpenList</commands>
       <commands>Document.КорректировкаДолга.StandardCommand.OpenList</commands>
-      <commands>0:ac078283-b794-4f44-80fd-d85bdf454d55</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

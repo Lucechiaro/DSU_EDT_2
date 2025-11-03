@@ -12,7 +12,7 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="42ecb894-6d5f-4add-bd40-69685ed81282"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="0bdbe80f-aedf-49f2-aac3-dd6db11bed08"/>
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="39438f26-38d2-4d78-9916-942361d42a44"/>
-  <configurationExtensionCompatibilityMode>8.3.18</configurationExtensionCompatibilityMode>
+  <configurationExtensionCompatibilityMode>8.3.27</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -36,7 +36,7 @@
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <compatibilityMode>8.3.18</compatibilityMode>
+  <compatibilityMode>8.3.27</compatibilityMode>
   <languages uuid="96f7829f-7ba4-44a4-acc9-a0549f4f759c">
     <name>Русский</name>
     <synonym>
@@ -46,21 +46,21 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.ДенежныеСредства</subsystems>
-  <subsystems>Subsystem.ПланируемыеПокупки</subsystems>
   <subsystems>Subsystem.ДолговыеОбязательства</subsystems>
-  <subsystems>Subsystem.Счетчики</subsystems>
   <subsystems>Subsystem.Напоминания</subsystems>
+  <subsystems>Subsystem.ПланируемыеПокупки</subsystems>
+  <subsystems>Subsystem.Счетчики</subsystems>
   <styleItems>StyleItem.ЦветНадписиДеньНедели</styleItems>
+  <commonPictures>CommonPicture.Время</commonPictures>
+  <commonPictures>CommonPicture.Деньги</commonPictures>
+  <commonPictures>CommonPicture.Добавить</commonPictures>
+  <commonPictures>CommonPicture.Долги</commonPictures>
   <commonPictures>CommonPicture.КнопкаОК</commonPictures>
   <commonPictures>CommonPicture.КнопкаОтмена</commonPictures>
-  <commonPictures>CommonPicture.Добавить</commonPictures>
   <commonPictures>CommonPicture.ОбщаяКартинка1</commonPictures>
-  <commonPictures>CommonPicture.Сформировать</commonPictures>
-  <commonPictures>CommonPicture.Деньги</commonPictures>
-  <commonPictures>CommonPicture.Долги</commonPictures>
-  <commonPictures>CommonPicture.Счетчики</commonPictures>
   <commonPictures>CommonPicture.ПланируемыеПокупки</commonPictures>
-  <commonPictures>CommonPicture.Время</commonPictures>
+  <commonPictures>CommonPicture.Сформировать</commonPictures>
+  <commonPictures>CommonPicture.Счетчики</commonPictures>
   <sessionParameters>SessionParameter.ТочкаАктуальности</sessionParameters>
   <roles>Role.Основная</roles>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
@@ -70,15 +70,15 @@
   <commonModules>CommonModule.ОбщегоНазначенияПовтИсп</commonModules>
   <commonModules>CommonModule.УправлениеНапоминаниями</commonModules>
   <definedTypes>DefinedType.ИдентификаторКорреспондента</definedTypes>
-  <commonCommands>CommonCommand.СоздатьТочкуАктуальности</commonCommands>
   <commonCommands>CommonCommand.АктуализироватьКурсыВалют</commonCommands>
-  <commonCommands>CommonCommand.ПодсчитатьЛиквиды</commonCommands>
-  <commonCommands>CommonCommand.ЗагрузитьВыпискуБанка</commonCommands>
   <commonCommands>CommonCommand.ВводДвиженийПоСчету</commonCommands>
-  <constants>Constant.ОсновнаяВалютаУчета</constants>
-  <constants>Constant.СчетХраненияДСПланируемыхПокупок</constants>
+  <commonCommands>CommonCommand.ЗагрузитьВыпискуБанка</commonCommands>
+  <commonCommands>CommonCommand.ПодсчитатьЛиквиды</commonCommands>
+  <commonCommands>CommonCommand.СоздатьТочкуАктуальности</commonCommands>
   <constants>Constant.ВалютаХраненияДСПланируемыхПокупок</constants>
   <constants>Constant.НапоминанияДнейДоСобытия</constants>
+  <constants>Constant.ОсновнаяВалютаУчета</constants>
+  <constants>Constant.СчетХраненияДСПланируемыхПокупок</constants>
   <commonForms>CommonForm.ВводДвиженийПоСчету</commonForms>
   <commonForms>CommonForm.ВводПоказателейСчетчиков</commonForms>
   <commonForms>CommonForm.ЗагрузкаВыпискиБанка</commonForms>
@@ -88,59 +88,59 @@
   <commonForms>CommonForm.ФормаВводаРасходов</commonForms>
   <commonForms>CommonForm.ФормаВыбораДаты</commonForms>
   <catalogs>Catalog.Валюты</catalogs>
-  <catalogs>Catalog.Счета</catalogs>
-  <catalogs>Catalog.СтатьиДДС</catalogs>
-  <catalogs>Catalog.Счетчики</catalogs>
-  <catalogs>Catalog.ПланируемыеПокупки</catalogs>
-  <catalogs>Catalog.НастройкиНапоминаний</catalogs>
   <catalogs>Catalog.Должники</catalogs>
+  <catalogs>Catalog.НастройкиНапоминаний</catalogs>
+  <catalogs>Catalog.ПланируемыеПокупки</catalogs>
+  <catalogs>Catalog.СтатьиДДС</catalogs>
+  <catalogs>Catalog.Счета</catalogs>
+  <catalogs>Catalog.Счетчики</catalogs>
   <catalogs>Catalog.ШаблоныРазбораБанковскойВыписки</catalogs>
-  <documents>Document.РасходДенежныхСредств</documents>
-  <documents>Document.ПриходДенежныхСредств</documents>
-  <documents>Document.ПеремещениеДенежныхСредств</documents>
-  <documents>Document.РегистрацияПланируемойПокупки</documents>
+  <documents>Document.БанковскаяТранзакция</documents>
   <documents>Document.ИзменениеПланируемойПокупки</documents>
   <documents>Document.КорректировкаДолга</documents>
+  <documents>Document.ПеремещениеДенежныхСредств</documents>
   <documents>Document.ПлановыеДоходыРасходы</documents>
-  <documents>Document.БанковскаяТранзакция</documents>
-  <documentJournals>DocumentJournal.РасходыПоДолговымОбязательствам</documentJournals>
-  <documentJournals>DocumentJournal.ПриходыПоДолговымОбязательствам</documentJournals>
+  <documents>Document.ПриходДенежныхСредств</documents>
+  <documents>Document.РасходДенежныхСредств</documents>
+  <documents>Document.РегистрацияПланируемойПокупки</documents>
   <documentJournals>DocumentJournal.ОбщийЖурналДолговыхДокументов</documentJournals>
-  <enums>Enum.ВидыСчетов</enums>
-  <enums>Enum.УдалитьТипыДолговыхОбязательств</enums>
-  <enums>Enum.ВидыПериодов</enums>
-  <enums>Enum.СостоянияПланируемойПокупки</enums>
-  <enums>Enum.СостоянияНапоминаний</enums>
-  <enums>Enum.ВидыДолговыхОпераций</enums>
+  <documentJournals>DocumentJournal.ПриходыПоДолговымОбязательствам</documentJournals>
+  <documentJournals>DocumentJournal.РасходыПоДолговымОбязательствам</documentJournals>
   <enums>Enum.БулевоДаНет</enums>
   <enums>Enum.ВидДвиженияДС</enums>
+  <enums>Enum.ВидыДолговыхОпераций</enums>
+  <enums>Enum.ВидыПериодов</enums>
+  <enums>Enum.ВидыСчетов</enums>
+  <enums>Enum.СостоянияНапоминаний</enums>
+  <enums>Enum.СостоянияПланируемойПокупки</enums>
+  <enums>Enum.УдалитьТипыДолговыхОбязательств</enums>
   <enums>Enum.ФорматыВыписки</enums>
-  <reports>Report.СальдоЗаПериод</reports>
-  <reports>Report.РасходыЗаПериод</reports>
-  <reports>Report.ОстаткиПоСчетам</reports>
+  <reports>Report.АнализРасходов</reports>
+  <reports>Report.ДвиженияПоДолговымОбязательствам</reports>
+  <reports>Report.ДвиженияПоСчету</reports>
+  <reports>Report.ДинамикаРасходовПоСтатье</reports>
   <reports>Report.ДоходыЗаПериод</reports>
   <reports>Report.ИсторияКурсовВалют</reports>
-  <reports>Report.ДвиженияПоСчету</reports>
-  <reports>Report.СостоянияДолговыхОбязательств</reports>
-  <reports>Report.ДвиженияПоДолговымОбязательствам</reports>
-  <reports>Report.ИсторияТочекАктуальности</reports>
   <reports>Report.ИсторияРасходовПоСтатье</reports>
-  <reports>Report.АнализРасходов</reports>
-  <reports>Report.ПоказанияСчетчиков</reports>
-  <reports>Report.ДинамикаРасходовПоСтатье</reports>
-  <reports>Report.ПрогнозируемыеОстаткиДенежныхСредств</reports>
+  <reports>Report.ИсторияТочекАктуальности</reports>
   <reports>Report.ОстаткиВалют</reports>
+  <reports>Report.ОстаткиПоСчетам</reports>
+  <reports>Report.ПоказанияСчетчиков</reports>
+  <reports>Report.ПрогнозируемыеОстаткиДенежныхСредств</reports>
+  <reports>Report.РасходыЗаПериод</reports>
+  <reports>Report.СальдоЗаПериод</reports>
+  <reports>Report.СостоянияДолговыхОбязательств</reports>
+  <informationRegisters>InformationRegister.ГрафикПлановыхДоходовРасходов</informationRegisters>
   <informationRegisters>InformationRegister.КурсыВалют</informationRegisters>
   <informationRegisters>InformationRegister.ПоказанияСчетчиков</informationRegisters>
-  <informationRegisters>InformationRegister.Тарифы</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияПланируемыхПокупок</informationRegisters>
+  <informationRegisters>InformationRegister.Тарифы</informationRegisters>
   <informationRegisters>InformationRegister.ТочкиАктуальности</informationRegisters>
-  <informationRegisters>InformationRegister.ГрафикПлановыхДоходовРасходов</informationRegisters>
-  <accumulationRegisters>AccumulationRegister.ОстаткиПоСчетам</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.Доходы</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.Расходы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ДолговыеОбязательства</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.ОстаткиПланируемыхПокупок</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Доходы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиВалют</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиПланируемыхПокупок</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиПоСчетам</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Расходы</accumulationRegisters>
   <tasks>Task.Напоминание</tasks>
 </mdclass:Configuration>
