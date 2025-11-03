@@ -68,6 +68,7 @@
   <commonModules>CommonModule.ОбщегоНазначенияКлиент</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияПовтИсп</commonModules>
+  <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
   <commonModules>CommonModule.УправлениеНапоминаниями</commonModules>
   <definedTypes>DefinedType.ИдентификаторКорреспондента</definedTypes>
   <commonCommands>CommonCommand.АктуализироватьКурсыВалют</commonCommands>
