@@ -190,17 +190,19 @@
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
-      <name>ЗагрузитьВыписку</name>
-      <id>51</id>
+      <name>СправочникСчетаКомандаЗагрузитьВыписку</name>
+      <id>69</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <defaultItem>true</defaultItem>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Счет</segments>
+      </dataPath>
       <extendedTooltip>
-        <name>ЗагрузитьВыпискуРасширеннаяПодсказка</name>
-        <id>52</id>
+        <name>СправочникСчетаКомандаЗагрузитьВыпискуРасширеннаяПодсказка</name>
+        <id>70</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -209,14 +211,11 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>Form.Command.ЗагрузитьВыписку</commandName>
-      <representation>PictureAndText</representation>
+      <commandName>Catalog.Счета.Command.ЗагрузитьВыписку</commandName>
+      <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
-      <picture xsi:type="core:PictureRef">
-        <picture>StdPicture.Post</picture>
-      </picture>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
@@ -1339,23 +1338,6 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>Обновить</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ЗагрузитьВыписку</name>
-    <title>
-      <key>ru</key>
-      <value>Загрузить выписку</value>
-    </title>
-    <id>3</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ЗагрузитьВыписку</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

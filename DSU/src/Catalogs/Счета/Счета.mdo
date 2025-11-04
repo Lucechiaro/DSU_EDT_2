@@ -27,7 +27,23 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Счета.Form.ItemForm</defaultObjectForm>
   <defaultChoiceForm>Catalog.Счета.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a1e504ee-633b-422b-a0e0-1baf738ed6c0">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="10c7e09c-c82a-4a6e-bf93-38b79cc76df2">
     <name>Забалансовый</name>
     <synonym>
@@ -101,4 +117,28 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="51041dc6-d4c2-4d40-9830-bcc176a1df55">
+    <name>ItemForm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="02dc3af7-feea-4ab9-8a84-d7525e282ce0">
+    <name>ЗагрузитьВыписку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить выписку</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Счета</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Post</picture>
+    </picture>
+  </commands>
 </mdclass:Catalog>
