@@ -29,10 +29,10 @@
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <enumValues uuid="d965b397-9237-4827-98da-8ac245721799">
-    <name>Тинькофф</name>
+    <name>ТБанк</name>
     <synonym>
       <key>ru</key>
-      <value>Тинькофф</value>
+      <value>Т-банк</value>
     </synonym>
   </enumValues>
   <enumValues uuid="8ad42707-82b9-409c-94fa-6a6b69729f42">

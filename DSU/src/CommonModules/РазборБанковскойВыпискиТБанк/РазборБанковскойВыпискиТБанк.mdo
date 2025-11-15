@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30c27c15-fd94-4328-bb70-c1c7f4e02dd2">
+  <name>РазборБанковскойВыпискиТБанк</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разбор банковской выписки Т-банк</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>
